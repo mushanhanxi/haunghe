@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="4月1日起，《中华人民共和国黄河保护法》正式施行。黄河保护法是中国第二部流域法律，于2022年10月30日经全国人大常委会会议表决通过。此前，中国第一部流域法律&mdash;&mdash;长江保护法已于2021年3月1日起施行。">
+    <title>《中华人民共和国黄河保护法》正式施行 - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}" class="active">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						生态保护					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="{{ url_for('/shengtaibaohu') }}" class="nei_active">生态保护</a></div>
+												<div><a href="{{ url_for('/shengtaiwenming') }}" class="">生态文明</a></div>
+												<div><a href="{{ url_for('/shengtaichanpin') }}" class="">生态产品</a></div>
+												<div><a href="{{ url_for('/huangheshengtaibaohugongcheng') }}" class="">黄河生态保护工程</a></div>
+												<div><a href="{{ url_for('/zhongguobeifangzhishagongcheng') }}" class="">中国北方治沙工程</a></div>
+												<div><a href="{{ url_for('/huanjingzhili') }}" class="">环境治理</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>《中华人民共和国黄河保护法》正式施行</h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2023-05-09<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;4月1日起，《中华人民共和国黄河保护法》正式施行。黄河保护法是中国第二部流域法律，于2022年10月30日经全国人大常委会会议表决通过。此前，中国第一部流域法律——长江保护法已于2021年3月1日起施行。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;黄河保护法包括总则、规划与管控、生态保护与修复、水资源节约集约利用、水沙调控与防洪安全、污染防治、促进高质量发展、黄河文化保护传承弘扬、保障与监督、法律责任和附则等，共11章、122条。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;法律明确，国家加强黄河流域生态保护与修复，坚持一体化保护与修复，实行自然恢复为主、自然恢复与人工修复相结合的系统治理;国家加强黄河流域环境污染的综合治理、系统治理、源头治理，推进重点河湖环境综合整治。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;东南大学法学院教授熊樟林认为，黄河保护法的出台与施行，是全面推进国家“江河战略”法治化的又一标志性举措，对于保障黄河安澜，推进水资源节约集约利用，实现人与自然和谐共生、中华民族永续发展具有重大意义。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;黄河长期以来“体弱多病”，多年平均水资源总量不到长江的7%，且生态脆弱，上游的高原冰川、中游的黄土高原、下游的黄河三角洲等极易发生退化。环境污染也积重较深，水质总体低于全国平均水平。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;中国社科院学部委员、北京工业大学生态文明研究院院长潘家华说，黄河保护法以水为核心、河为纽带、流域为基础，统筹推进山水林田湖草沙综合治理、系统治理、源头治理，更加注重保护治理的系统性、整体性、协同性，法律以黄河流域存在的突出困难和问题为导向，具有较强的针对性、保障性、约束性。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;黄河宁，天下平。</span><br><p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;"><img src="static/picture/ecd7bdc5183d47f6429d8fc739113b76.jpg" alt=""><br></span></p><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;这是3月31日在甘肃省兰州市拍摄的黄河兰州段夕阳景色。近年来，兰州市着力提升黄河兰州段的景观品质，不断完善便民服务设施。新华社记者 马希平 摄</span></p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;在黄河穿城而过的甘肃兰州，自小在黄河边长大的社区级河长杨瑷祯见证了黄河的“清浊之变”：河边的私搭乱建消失了、河风里的异味没有了、河堤旁的景色绿了、河岸上游玩的市民多了。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“当下，治理黄河有了法律保障，我们在具体工作中可以让保护工作更有法可依，给群众宣传起来更有理有据。”杨瑷祯说。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;宁夏、山西、陕西、河南、山东等黄河沿线省区，近年来也通过采取生态保护修复、水污染联防联控机制、生态补偿等措施，有力地推动黄河流域生态环境改善。黄河保护法的实施，更将黄河流域生态环境治理纳入法制化的轨道。</span><br><p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;"><img src="static/picture/f75eca87e91bd2a2bc7bffc9733cf83d.jpg" alt=""><br></span></p><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;2月3日，一群天鹅在黄河湿地(无人机照片)。近日，黄河西岸的合阳黄河湿地自然保护区内，天鹅今年首次规模出现，数量近千只。合阳黄河湿地自然保护区位于陕西省合阳县。新华社发(崔正博 摄)</span></p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;从修订环境保护法到将“生态文明建设”写入宪法，从制定长江保护法、黄河保护法、黑土地保护法到修改固体废物污染环境防治法、野生动物保护法、森林法……中国逐步形成了“1+N+4”(一部环境保护法、若干部专门环保法律和4部特殊区域性、流域性环保法)的生态环保法律体系。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“长江保护法的出台实施，为保护长江构建硬约束机制，开出了治愈‘长江病’的良方。”潘家华说。</span><br><p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;"><img src="static/picture/757d49b01976de3e31c10b5839c0efee.jpg" alt=""><br></span></p><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;这是南通五山及沿江地区景色(2020年11月13日摄，无人机照片)。新华社记者 季春鹏 摄</span></p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;在草长莺飞的江苏南通滨江地区，水清岸绿入画屏，江豚也不再是稀客。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;近年来，南通持续推进沿江沿海生态带修复建设，贯通400多公里江海岸线，以生态绿廊“勾勒”江海，实现面貌焕新、功能重塑。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;春江水澈，江豚先知。2022年长江江豚科考显示，母子豚数量显著增加，预示着种群繁衍不断壮大。江豚游弋的喜人景象从只能在保护区偶遇，到如今全流域常见——其背后是全面长江禁捕退捕和长江保护法的实施。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;2021年以来，江苏省检察机关共办理涉长江保护公益诉讼案件5339件，发出诉前检察建议4042件，提起公益诉讼509件。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;2022年底全国人大常委会执法检查组撰写的一份报告显示，2021年长江流域国控断面水质优良比例达97.1%，长江经济带经济总量占全国比重达46.6%，实现了在发展中保护、在保护中发展。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“与长江保护法将保护和修复长江流域生态环境放在压倒性位置类似，黄河保护法也是落实重在保护、要在治理的要求，坚定走绿色可持续的高质量发展之路。”兰州大学资源环境学院教授王鑫说，相信黄河保护法能够像长江保护法一样发挥重大作用。</span><br><p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;"><img src="static/picture/9bbd9c8396c1c9a0e675399d3c7a2e83.jpg" alt=""><br></span></p><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;这是2022年9月21日拍摄的玛曲县阿万仓湿地(无人机照片)。甘肃省甘南藏族自治州玛曲县是黄河上游重要的水源涵养区和补给区。新华社记者 陈斌 摄</span></p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;在黄河保护法实施前几天，甘肃省水利厅举行了“全民同心贯彻黄河保护法 携手聚力共护母亲河安澜”主题宣传活动。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;杨瑷祯介绍，甘肃省政府部门计划举办培训班，让更多基层干部了解和熟知黄河保护法。她已经报名参加，希望通过学习，向公众普及黄河保护法内容以及相关涉水条例法规，提高民众法律意识。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“黄河保护法是有关黄河保护、开发、利用方面总则性的法律，在实施的过程中，需要地方政府进一步细化相关制度，严格、公正、文明执法，在社会中形成自觉遵法、学法、守法、用法的良好氛围。”熊樟林说。</span><br>                        </div>
+
+                        <section id="ar_fot">
+							                            <h6 class="fl highlight mb-2"><span>上一篇：</span><a href="{{ url_for('h168') }}">黄河流域“清废行动”清理各类固废近900万吨</a></h6>
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="晚餐要吃得清淡、摄入优质蛋白、聚会相约&ldquo;吃草&rdquo;，合理膳食成为当代人制定食谱的重要标准；早睡早起不熬夜，年轻人更注重养生，努力摆脱&ldquo;亚健康&rdquo;状态；一波波运动&ldquo;时尚&rdquo;兴起，保持体育锻炼成为健康生活的&ldquo;必修课&rdquo;&hellip;&hellip;">
+    <title>建设健康中国缘何成为&ldquo;生活方式的革命&rdquo;？丨中国这十年&middot;焦点面对面  - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}" class="active">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						新健康革命					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="{{ url_for('/xinjiankanggeming') }}" class="nei_active">新健康革命</a></div>
+												<div><a href="{{ url_for('/jiankangwenhuadezhongyaoxing') }}" class="">健康文化的重要性</a></div>
+												<div><a href="{{ url_for('/zhongguochuantongjiankangyinshi') }}" class="">中国传统健康饮食</a></div>
+												<div><a href="{{ url_for('/jiankangwenhuazhishipuji') }}" class="">健康文化知识普及</a></div>
+												<div><a href="{{ url_for('/xinyinshigeming') }}" class="">新饮食革命</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2022-10-13<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：搜狐网<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">晚餐要吃得清淡、摄入优质蛋白、聚会相约“吃草”，合理膳食成为当代人制定食谱的重要标准；早睡早起不熬夜，年轻人更注重养生，努力摆脱“亚健康”状态；一波波运动“时尚”兴起，保持体育锻炼成为健康生活的“必修课”……</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">当下中国，“健康”成为社会发展、大众生活的流行语。从“每天锻炼一小时，健康工作50年”的奋斗追求到从吃得饱、吃得好向吃得营养、吃得健康的历史转变，折射的不仅仅是健康理念和生活方式的转变。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">全民健康已然是一个国家综合实力的体现，是民族昌盛和国家富强的重要标志。习近平总书记“没有全民健康，就没有全面小康”的重要论述，赢得了全社会的共鸣。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">于国于民，健康所处的地位正变得愈加重要。过去十年，健康中国已上升到国家战略，成为崭新的治国理念。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">健康中国行动推进委员会办公室副主任、国家卫生健康委员会规划发展与信息化司司长毛群安接受中新社“中国焦点面对面”专访时指出，实施健康中国战略，启动健康中国行动不亚于“一次健康革命”。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中共十八大以来，中国坚持把健康摆在优先发展的战略地位，作出了实施健康中国战略的重大决策部署，明确提出2035年“建成健康中国”。2019年发布的《健康中国行动（2019—2030年）》，把健康融入所有政策，促进以治病为中心向以健康为中心转变。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><img src="static/picture/5aae32142ec44c7dac7031b8c028b891.jpeg" style="margin:10px auto 0px;padding:0px;display:block;height:auto;"></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">2022年10月4日，河北省邯郸市永年区洺洲太极拳社开展“秀太极 迎重阳”活动。中新社发 胡高雷 摄 图片来源：CNSphoto</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">在健康中国战略的指引下，毛群安指出，过去十年来中国卫生健康事业快速发展，国人的健康水平得到了快速提升。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">这一“快速提升”直接体现在一连串数字上：十年来，中国人均预期寿命从74.8岁增长至78.2岁，居民健康素养水平从8.8%提高到25.4%，经常参加体育锻炼人数占比达到37.2%……数据显示，中国的主要健康指标居于中高收入国家前列。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">“健康中国行动确定的2022年目标主要指标都已经提前实现，这要归功于健康促进的政策体系和制度体系。”毛群安指出，回顾十年来中国卫生健康事业的进步，健康促进制度体系的效用越来越明显。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">在此基础上，今年春季，《“十四五”国民健康规划》出台，该规划首次将健康预期寿命作为指标，不仅关注人均预期寿命本身，更体现对改善人群健康状况的重视。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">更为深层次的健康促进在于改变人们的生活方式，提倡“文明健康、绿色环保的生活方式”，如今已被视为打开健康之门的“金钥匙”。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">“实施健康中国行动是一次健康革命，是生活方式的革命。”毛群安指出，针对自身的健康状况，每个人都能够及时获取有关健康的信息与服务，并借此改善自身健康状况，这便是实施健康中国行动的目的之一。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><img src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg" style="margin:10px auto 0px;padding:0px;display:block;height:auto;"></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">健康中国行动推进委员会办公室副主任、国家卫生健康委员会规划发展与信息化司司长毛群安（右）在北京接受中新社“中国焦点面对面”专访。中新社记者 蒋启明 摄</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">访谈实录摘编如下：</span></span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：党的十八大以来，中国的健康促进工作取得了哪些显著的成就？过去十年间，中国人在哪些方面变得更健康了？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">回顾我国卫生健康事业的发展，特别是近十年来的快速发展，健康促进工作的制度体系不断完善。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">国家实施健康中国战略，2019年启动健康中国行动，构建全面推进健康中国建设的组织体系，即以国务院分管领导牵头、相关部门参与的健康中国行动推进委员会，并组建专家咨询委员会，成立了15个专项行动工作组。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">党和政府领导、各部门共同参与、全社会广泛动员、每个人践行自己健康第一责任人的理念，在全社会的氛围日益浓厚。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">根据我们对健康中国行动的评估，广大公众的健康水平得到快速提升。用国际组织评价一个国家和地区人群健康状况的主要指标来评估，目前中国居民的健康状况已经处在中高收入国家的前列，健康绩效是明显的。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">健康中国行动确定的2022年目标主要指标都已经提前实现，这要归功于健康促进的政策体系和制度体系。回顾这十年来的进步，国人的健康水平得到了快速提升，健康促进制度体系的效用越来越明显。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：《“十四五”国民健康规划》已经出台，立足于全人群和全生命周期两个着力点，背后的依据是什么？如何真正做到惠及全人群、覆盖全生命周期？实现健康中国，还有哪些不平衡、不充分的问题亟待解决？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">今年4月国务院办公厅印发《“十四五”国民健康规划》，细化明确了“十四五”期间落实《“健康中国2030”规划纲要》的目标和任务。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">首先要构建一个强大的公共卫生体系，筑牢维护公众健康的保护网。同时要在公共卫生网络建设的过程中，突出明确各方面的责任与义务。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">二是倡导“文明健康、绿色环保”的生活方式。解决重大慢性疾病对人群健康带来的影响，需要从生活方式入手，更加完善健康促进体系。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">三是进一步深化医药卫生体制改革，完善医疗保障制度、优化医疗服务，让老百姓得病后能够及时接受救治，看病更加便捷舒心。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">《“十四五”国民健康规划》首次把健康预期寿命作为一个指标，说明我们不仅要观察预期寿命的长度，还希望人群的健康状况得到改善，这也是“十四五”时期要着力实现的目标。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><img src="static/picture/c6f25dde23764ccba549034bd6dd0637.jpeg" style="margin:10px auto 0px;padding:0px;display:block;height:auto;"></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">2022年8月28日，江苏泰州，青少年在东环高架体育公园内健身。泱波 摄</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：提到健康，我们总会关注“一老一小”。随着人口老龄化程度不断加深，未来一段时间我国对健康服务的需求还会持续保持在较高水平。从健康的角度出发，应如何加速配套措施的建设，让经济社会发展尽快适应这一趋势？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">健康中国战略的根本目标是全民健康，即每个人在不同生命阶段都能保持理想的健康状态。照此标准，我国目前为民众提供的医疗卫生和健康服务还有一些不充分不平衡，其中对于老年人群的健康服务较为明显。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">在积极应对人口老龄化过程中，我国面临的一个挑战是建立一套适合老年人需要的医疗卫生健康服务。这个体系的建设是“十四五”期间一项重要的战略性任务，要从预防、治疗、康复、长期护理等不同方面发力，让老年人不仅能够延长寿命，而且能够保持健康、提高生活质量。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">为此，医疗卫生和健康行业做出了具体规划。比如，要求二级及以上综合性医院开设老年医学科，针对老年人的特殊需求提供医疗卫生和健康服务。还有积极推动长期护理保险等制度性建设，加大老年护理人才培训工作等等。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：说完“老”，我们再说“小”。妇幼健康促进行动提出，到2022年和2030年，我国婴儿死亡率要分别降至7.5‰以下和5‰以下。随着中国实施三孩生育政策及配套支持措施，在此背景下，妇幼保健工作应该朝着什么方向发展？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">婴幼儿死亡率，之所以把它用作评价一个国家和地区人群健康的重要指标，是因为这个指标的变化不仅代表婴幼儿的健康状况，也是整个国家和地区医疗卫生和健康服务水平的重要标准。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">目前我国孕产妇和婴幼儿死亡率已经实现了规划的目标，但是要在接下来的十年中继续把指标往下降，难度是非常大的。因此要把重点放在目前孕产妇和婴幼儿可能发生的高危环节上。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">针对近些年特别是国家出台“二孩”“三孩”政策之后的高龄产妇增加，实施母婴安全五项制度，为保障母婴安全打出了一套组合拳。对每一位孕产妇进行妊娠风险评估，按照风险程度实行绿、黄、橙、红、紫5色管理。对妊娠风险分级为橙、红、紫色的高危孕产妇严格实行专案管理，保证专人专案、全程管理、动态监管、集中救治，确保做到“发现一例、登记一例、报告一例、管理一例、救治一例”。特别是“三孩”政策实施后，我们制定了母婴安全行动提升计划、健康儿童行动提升计划和母乳喂养促进行动计划，形成“两提升、一促进”的政策措施。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">接下来还会针对各地在孕产妇、婴幼儿保健方面的短板弱项，通过对口支援方式、针对性措施，提升妇幼保健专业团队的力量和水平。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><img src="static/picture/3fbe6a01dfcd43f8b1c02656e7f1cf2f.jpeg" style="margin:10px auto 0px;padding:0px;display:block;height:auto;"></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">健康中国行动推进委员会办公室副主任、国家卫生健康委员会规划发展与信息化司司长毛群安（右）在北京接受中新</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">社“中国焦点面对面”专访</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">。中新社记者 蒋启明 摄</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：疾病预防控制体系是保护人民群众健康、保障公共卫生安全、维护社会经济稳定的重要保障。新冠肺炎疫情凸显传染病防控体系的重要。党的十八大以来，我国的传染病防控体系经历了怎样的建设和发展？今后疾控体系还需要如何发展？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">通过新冠肺炎疫情防控，我们可以看到国家公共卫生体系的能力和过去的能力建设发挥了非常重要的作用。公共卫生体系得到了锤炼，公共卫生队伍经得起考验。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">在疫情防控过程中，我们发现还有一些短板弱项，例如基层的防控能力、应急统筹指挥体系上还有漏洞等。针对这一情况，中国做出了改革疾控体系的重大决策，组建了国家疾病预防控制局。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">重大疾病的防控，要在过去工作的基础上，针对短板弱项采取强有力措施，例如早期预警机制的建立。中国正在研究建立多点触发的预警机制，及时获取各方面信息，判断风险点。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">再如，中国正在全国遴选一些重大传染病救治基地、卫生应急基地，按照不同区域布局。一旦发生紧急情况，首先在一个地域就能够形成有效的指挥体系。相应的设备条件、物资准备、人员能力准备，也都是疾控体系建设的重要方面。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：随着人们对体育锻炼的重视不断加深，五花八门的体育运动方式层出不穷，比如说年轻人喜欢玩的飞盘、跟着网红跳操、野外露营活动等，引领了一波体育运动的“时尚”。对于这种运动“时尚”，您怎么看？应如何正确引导民众参加体育锻炼？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">健身运动和健康的关系非常密切。通过一系列的政策促进、对公众宣传，大家的健身意识更强了，越来越多的人参加体育锻炼活动。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">从评估情况看，要动员更多的人参与运动健身，还有很大的潜力。目前青少年和职业人群的运动量还不够，我们在会同体育部门为大家创造条件，希望更多的人真正动起来。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">参加体育锻炼的人越来越多，也出现了一个问题，就是不当运动造成的伤害增加。这提示我们要科学运动，对运动进行指导。我们提出“体医融合”，希望通过体育健身和医疗卫生两个专业的融合，让民众既能健身，又能防止运动不当造成的伤害。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">当然，有一些新颖的活动方式，增加了运动的乐趣。我们鼓励创造一些新颖的运动方式，前提是注意运动安全。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><img src="static/picture/4ea2d74287844aec87ee51e04c33220f.jpeg" style="margin:10px auto 0px;padding:0px;display:block;height:auto;"></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">2022年8月6日，首届中国飞盘联赛的首站比赛在西安启幕。赛场上，运动员在烈日下，奋力奔跑、追逐，飞盘在蓝天碧草间划出一道道极具动感的弧线。张一辰 摄</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：我国正在倡导“文明健康、绿色环保生活方式”，您之前也说过，生活方式的改变可以看作一场“健康革命”，为什么要上升到这个高度？在今天中国不断向前发展迈进的过程中，健康处于怎样的地位？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">卫生健康事业始终处于基础性地位，同国家整体战略紧密衔接，发挥着重要支撑作用。抗疫实践证明，只有努力全方位全周期保障人民健康，保障公共卫生安全，加快形成有利于健康的生活方式、生产方式、经济社会发展模式和治理模式，才能实现健康和经济社会良性协调发展。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">当前，面对多重疾病威胁和多种健康影响因素交织的复杂局面，我们启动倡导文明健康、绿色环保生活方式活动，从短期看，有助于从源头降低疾病传播风险，助力常态化疫情防控。从长远看，有利于群众形成主动健康观念，推动从以治病为中心向以健康为中心转变，所以说这是一场新时代的健康革命。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：现在很多人面临“亚健康”问题，像腰椎颈椎疼痛、失眠、肥胖等等。对于当下的年轻人来说，想摆脱这种“亚健康”的状态，您有什么好的建议？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">有的人出现了一些“亚健康”的症状，这是身体发出的预警信号。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">运动不足、过度摄入高热量食物、不注意休息，这些因素会导致健康状况恶化。监测发现，像高血压、糖尿病等一些严重并发症的发生年龄在提前。这是因为没有从生活方式这个环节将慢病的进程延缓，反而加剧了。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">实施健康中国行动是一次“健康革命”，是生活方式的革命。希望现在的职业人群反思生活方式有没有问题，有哪些突出的问题，要下决心改变。希望每个人针对自身的健康状况，能够及时获取相关信息和服务，运用这些知识、服务来改善自身的健康状况，这就是“健康素养水平”。这个素养不是“知不知道”，而是“做没做到”。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中新社记者：为加快推动从以治病为中心转变为以人民健康为中心，动员全社会落实预防为主方针，中国提出实施健康中国行动，提高全民健康水平。目前，健康中国行动进展如何？能否实现总体目标中有关2022年的各项目标？还有哪些问题亟待解决？</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="font-weight:700;border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">毛群安：</span><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">2019年国务院实施健康中国行动以来，国家卫生健康委联合健康中国行动推进委各成员单位持续完善健康中国行动政策机制，加大健康影响因素干预，宣传健康生活理念。</span></p><p style="border:0px;font-size:16px;margin-top:0.63em;margin-bottom:1.8em;padding:0px;counter-reset:list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0;color:#191919;font-family:&quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;white-space:normal;background-color:#FFFFFF;"><span style="border:0px;margin:0px;padding:0px;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">经过三年的努力，各部门协同联动格局初步形成，健康中国行动品牌效应逐步凸显，全民健康素养水平稳步提高。当前，我国居民健康素养水平达25.4%，人均预期寿命提高到78.2岁，健康中国行动2022年主要目标提前实现，健康中国建设开局起步良好、进展顺利。</span></p>                        </div>
+
+                        <section id="ar_fot">
+							                            <h6 class="fr highlight"><span>下一篇：</span><a href="{{ url_for('h195') }}">强四力 走基层: 山东生物海瓷餐具引领健康革命</a></h6>
+                            <div class="clear"></div>
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href=""><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="一、人体内脏的休息时间  凌晨1&mdash;&mdash;3时：这是肝最强的时间，我们能做的就是睡眠，给肝创造一个良好的工作环境。肝最弱的时间是13&mdash;&mdash;17时。所以建议把辛苦工作尽量堆在上午。">
+    <title>人体内脏的休息时间是什么时候人体内脏的调理方法 - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}" class="active">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						健康文化知识普及					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="{{ url_for('/xinjiankanggeming') }}" class="">新健康革命</a></div>
+												<div><a href="{{ url_for('/jiankangwenhuadezhongyaoxing') }}" class="">健康文化的重要性</a></div>
+												<div><a href="{{ url_for('/zhongguochuantongjiankangyinshi') }}" class="">中国传统健康饮食</a></div>
+												<div><a href="{{ url_for('/jiankangwenhuazhishipuji') }}" class="nei_active">健康文化知识普及</a></div>
+												<div><a href="{{ url_for('/xinyinshigeming') }}" class="">新饮食革命</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>人体内脏的休息时间是什么时候人体内脏的调理方法</h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2021-08-06<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：中国健康网<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;一、人体内脏的休息时间</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;凌晨1——3时：这是肝最强的时间，我们能做的就是睡眠，给肝创造一个良好的工作环境。肝最弱的时间是13——17时。所以建议把辛苦工作尽量堆在上午。肝怕劳累，虽然一天中任何时候都应该注意休息，但13——17时这段时间更重要。如果必须工作，肝脏在体表开窍于眼睛，至少每隔一小时让眼睛休息5分钟。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;有以下症状者，最需要养肝：眩晕、情绪易激动、烦躁不宁、性情抑郁沉闷、睡眠多梦，同时可能会胸肋隐痛、月经不调。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;凌晨5——7时：这是肾最强的时间，肾最脆弱的时间是23时——凌晨1时。建议早睡，养养精神，别在男人最虚弱的时候一再刺激它。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;有以下症状者，最需要养肾：头晕耳鸣、记忆力减退、性功能衰弱、手足软、腰膝酸软、易感风寒、不孕、早产。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;7——9时：这是肺最强的时间，有什么运动最好放在这会儿做，在肺最有力的时候做有氧运动，例如慢跑，能强健肺功能。肺最脆弱的时间是21——23时。肺脏通常在此时示弱，我们晚上咳嗽得更厉害些，建议晚饭后口中含一片梨，到睡前刷牙时吐掉。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;有以下症状者，最需要养肺：呼吸微弱、语音低微、呼吸急促、胸闷、咳嗽、喘息。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;9——11时：这是脾最强的时间，脾弱的人可以把午饭时间提前到11时，因为此时脾气最旺，消化食物、吸收营养最得力。脾最脆弱的时间是19——23时，建议晚饭一小时后吃一个水果，甘味可以健脾。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;有以下症状者，最需要养脾：腹胀、腹泻、倦怠、遗精、白带多、气短、懒言、韧带和肌肉松弛。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;11——13时：这是心最强的时间，有需要耗神思考的工作，可以利用中午，此时心力最强。心最弱的时间是21时——凌晨1时。所以心脏先天较弱的人宜早睡不宜熬夜，建议睡前喝一杯胡萝卜汁或番茄汁，红色食物能养心。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;二、人体内脏的性格</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“怒气”器官——肝脏</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;肝脏健康的人，忍耐力较强，情绪也比较正常;而肝脏一旦疲劳的话，人就容易发怒。经常发怒又会伤肝。很多女生，平时常常生气郁闷，却又不好把怒气发出来，只好憋在心里，变成肝气郁结。肝气郁结表现在脸上最明显的就是生黄褐斑、脸色暗沉青黄，情况严重时，还会造成乳腺增生、子宫肌瘤等。所以，千万不能小看它。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;建议想要漂亮又健康的你，遇到令人不愉快的事情，先要学会息怒，如果还剩下那么一点怒气，不妨发出来。当然，平时多做做瑜伽，看一些有关心灵修养的书，让自己的生活充满淡淡的喜悦和幸福感，才是保养肝脏最好的方法。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;除了怒气会伤害肝脏之外，脂肪含量较高的肉类和酒、甜的东西也很伤害肝脏。酸味的食物吃得过多会影响肝功能。而青色的食物对肝有益，比如西蓝花、青椒、黄瓜。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“恐惧”器官——肾脏</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;肾脏功能下降的话，人稍微遇到一点小异样便会非常不安，就容易忧心忡忡。对于未知的将来总是过于担忧的你，很可能是受到惊吓的肾脏在对你提出抗议呢。肾一虚弱人就易恐惧，越恐惧肾就越虚，结果就是，每天没精打采，眼睛又酸又涩，腰特别酸，没干什么活儿也觉得非常疲劳，老想睡觉。而且还常常是吸气时吸不进去，呼气时使劲叹气，我们称之为“肾不纳气”，是肾虚的症状之一。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;如果已经“伤肾”了，怎么办?中医上说，“肾乃先天之本”，肾脏的强弱几乎都是先天的，取决于父母，但也不全是遗传，后天错误的饮食习惯导致内脏功能不调也很容易伤害肾脏，所以如果这种紧张不安是偶尔的情绪反应，就说明那段时间的饮食出现了问题，对肾脏造成了伤害，只要恢复健康，这种恐惧不安感就会消失。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;黑色的食物补肾，因此可以多吃黑米、黑豆、黑木耳、海带、紫葡萄等。而过咸的食物或是盐的摄入量过多，会导致肾功能失调，很多尿毒症的患者就是因为摄入了过多的盐分。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;除了调节饮食习惯，我还特别推荐出现肾不纳气状况的女生，平时多练习瑜伽里的“腹式呼吸法”，就是只用鼻呼吸，吸气时让腹部凸起，吐气时收缩腹部使它凹进去。肾为气之根，每天坚持练习30分钟，对肾大有好处，而且还能排除毒素、去除小腹呢。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“悲伤”器官——肺</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;人们总是习惯用“多愁善感”来形容女生，认为“多愁善感”是天生的，是性格使然。其实，性格只是其中一个原因而已，还有一种可能是人的肺功能失调，肺不好的人总会有些悲伤和寂寞。只要肺的功能恢复正常，这种多愁善感、优柔寡断的情绪就会消失。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;反过来说，人在很忧伤的时候，就会伤肺。老是忧愁的女生要注意了，过度操心、悲伤，常常会先伤肺，接着肾也不好，最后造成身体的恶性循环。所以，平时还是避开播放主人公苦兮兮命运的电视频道，多看一些会逗得你哈哈大笑的节目吧!</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;在饮食上，白色的食物对肺有益，可以多吃白萝卜、洋葱、大白菜、山药等，少吃辛辣的刺激性强的食物，这类食物入肺，对肺功能有不好的影响。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;三、你的内脏到底有多脏</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;肺</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“在所有器官中，肺的自我保护能力最差，可以说是最受委屈的一个器官。”首都医科大学肺癌诊疗中心主任支修益教授告诉《生命时报》记者，吸烟是肺部最大的污染源，正常人的肺是红色的，烟民的肺则完全被熏黑了!“尼古丁、二氧化硫等所有吸入的有害物质，都可以看成附着在肺上的脏东西，肺肯定是所有器官中最脏的一个!”</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;其次是空气污染。你呼吸的每一口空气都可能将漂浮的颗粒、有害气体带进体内。虽然肺叶上排列的细小纤毛能将一些污染物、细菌清扫出去。但如果长时间处于空气污染的环境中，即使再坚强的肺，也会受不了。此外，人们的衣食住行、四季交替都对肺有影响。支修益说：“如果不注意就可能引起支气管炎、哮喘、肺结核等，严重的还会导致癌变。”</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;清洁方法：多吃苹果。美国国立卫生研究院研究表明，经常吃苹果的人咳嗽、生痰的几率比不经常吃的人低33%，这是因为苹果皮中的果胶和抗氧化物能减轻肺部的炎症反应。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;阴霾天气少出门。如果要出门最好戴口罩，尽量避开早上这段时间。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;多喝水，不吸烟。如果经常处于吸烟环境，一定要多喝水，可以加速排出体内有害物质。有数据显示，八成肺癌的成因是烟草，因此建议不要吸烟。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;肠</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;肠道中栖息着数以亿计的细菌，比如，益生菌和致病菌等，前者的作用在于平衡各菌群，维持肠道健康。“但如果饮食不规律，人体抵抗力下降，这些益生菌就会转变为致病菌，引起腹泻、胃溃疡等疾病。”四川省第四人民医院消化内科主任医师常玉英说。而经常打嗝、腹胀、放屁多而臭等现象，就是肠胃中的“脏东西”在作祟。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“尤其是大肠，本身就是一个很脏的器官。”常玉英表示，因为体内最终代谢的废物，也就是大便会进入大肠中。尤其对便秘的人来说，大便中的多种毒素会被肠道反复吸收，通过血液循环到达人体的各个部位，导致面色晦暗、皮肤粗糙、毛孔扩张、痤疮等。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;清洁方法：最重要的是保持肠道通畅。比如，多吃苹果、香蕉等水果，主食不要过于精细，多吃粗粮;外出旅游时，容易便秘，可以喝一点蜂蜜;工作压力大、久坐也会导致便秘，因此最好每天都运动一下，保持好心情。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;四、三习惯可助你调理内脏</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;1.吃七分饱，避免刺激食物</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;饮食不定时、不定量，对胃是最残忍的事──有时饿得直冒胃酸，有时却又吃到快撑破肚皮，不当的饮食方式很快让胃挂病号。胃比较喜欢清淡、中性的食物，太油、太冰、太咸、太辣都会让它不舒服。胃酸过多的人更要减少高盐、含咖啡因的食物。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;中医也认为，最好用平性、温和的食物来调养脾胃，平时喝温凉开水，吃中医所指平性的蔬果，如高丽菜、豆类、苹果等，不碰冷饮、辣椒等刺激食物。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;2.用纤维做好肠道环保</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;肠道要顺畅，绝对需要摄取充足的纤维，然而食物纤维分成水溶性和非水溶性两种，各自发挥不同功效：</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;「水溶性纤维」在肠内溶解后，能抓住食物残渣清扫肠道，并成为肠道内好菌的原料，调整肠内环境，并将老废物质、胆固醇、毒素等排出，也有预防肥胖与糖尿病的功效。蔬菜、水果、海藻里含量很多。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;「非水溶性纤维」则存在吃起来粗粗的食物里，如五谷杂粮、豆类。这种纤维在肠内吸收水分之后会膨胀，刺激肠壁来促进蠕动，缩短食物在大肠中滞留的时间，减少有害物质被吸收。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;3.固定早晨上厕所</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;早晨最好预留一段时间上厕所，清除你的肠道。因为喝了水、吃过早餐之后，原本饿了一夜，空荡荡的肠胃会被刺激而开始蠕动，这时候比较容易想跑厕所。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;当有便意时，尽可能赶快去解便，而不要忍住不上，让粪便又回到大肠里，被吸走更多水分，变得又干又硬，不容易解出，长期下来造成便秘，痛苦不堪。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;原标题：人体内脏的休息时间是什么时候人体内脏的调理方法</span><br>                        </div>
+
+                        <section id="ar_fot">
+							                            <h6 class="fr highlight"><span>下一篇：</span><a href="{{ url_for('h189') }}">头晕眼花日常要经常吃什么头晕眼花的按摩缓解方法</a></h6>
+                            <div class="clear"></div>
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

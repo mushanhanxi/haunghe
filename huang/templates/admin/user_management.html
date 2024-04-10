@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台管理 - 用户管理</title>
+  <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">后台管理系统</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('user_management') }}">用户管理</a>
+        </li>
+        <li class="nav-item" style="float: right;">
+          
+          <a class="nav-link" href="{{ url_for('logout') }}">注销</a>
+      </li>
+        <!-- 其他导航链接... -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 用户失败提示信息 在这段代码中，get_flashed_messages(with_categories=true)获取所有带有类别的闪现消息。
+  然后，使用for循环遍历消息及其类别，根据类别生成相应的Bootstrap alert元素。这样，当用户刷新页面或跳转到新页面时，
+  可以看到之前操作失败的提示信息。 -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="container mt-3">
+            {% for category, message in messages %}
+                <div class="alert alert-{% if category == 'danger' %}danger{% else %}{{ category }}{% endif %}" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<div class="container mt-4">
+  <h2>用户管理</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">用户名</th>
+        <th scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+        <tr>
+          <td>{{ user.userName }}</td>
+          <td>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#editUserModal{{ user.id }}">
+              编辑
+            </button>
+            <form method="post" action="{{ url_for('delete_user', user_id=user.id) }}" style="display: inline;">
+              <input type="hidden" name="_method" value="DELETE">
+              <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('确定要删除该用户吗？')">删除</button>
+            </form>
+          </td>
+        </tr>
+
+        <!-- 编辑用户模态对话框 -->
+        <div class="modal fade" id="editUserModal{{ user.id }}" tabindex="-1" aria-labelledby="editUserModalLabel{{ user.id }}" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editUserModalLabel{{ user.id }}">编辑用户</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form method="post" action="{{ url_for('edit_user', user_id=user.id) }}">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="editUsername{{ user.id }}">用户名</label>
+                    <input type="text" class="form-control" id="editUsername{{ user.id }}" name="username" value="{{ user.userName }}" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="editPassword{{ user.id }}">密码（留空则不修改）</label>
+                    <input type="password" class="form-control" id="editPassword{{ user.id }}" name="password" placeholder="请输入新密码">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                  <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <!-- 添加用户模态对话框 -->
+  <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#addUserModal">
+    添加用户
+  </button>
+
+  <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addUserModalLabel">添加用户</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form method="post" action="{{ url_for('add_user') }}">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="addUsername">用户名</label>
+              <input type="text" class="form-control" id="addUsername" name="username" placeholder="请输入用户名" required>
+            </div>
+            <div class="form-group">
+              <label for="addPassword">密码</label>
+              <input type="password" class="form-control" id="addPassword" name="password" placeholder="请输入密码" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="submit" class="btn btn-primary">添加</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="../../static/js/bootstrap.min.js"></script>
+<script src="../../static/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="《长安十二时辰》这部剧，在内容上还原了不少历史细节。尤其是唐朝饮食文化的一些东西，让很多观众津津乐道，其中包括胡饼、羊肉、水晶柿子等等。">
+    <title>《长安十二时辰》背后的吃历史：唐朝兴起的中国第四次饮食革命 - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}" class="active">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						中国传统健康饮食					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="{{ url_for('/xinjiankanggeming') }}" class="">新健康革命</a></div>
+												<div><a href="{{ url_for('/jiankangwenhuadezhongyaoxing') }}" class="">健康文化的重要性</a></div>
+												<div><a href="{{ url_for('/zhongguochuantongjiankangyinshi') }}" class="nei_active">中国传统健康饮食</a></div>
+												<div><a href="{{ url_for('/jiankangwenhuazhishipuji') }}" class="">健康文化知识普及</a></div>
+												<div><a href="{{ url_for('/xinyinshigeming') }}" class="">新饮食革命</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>《长安十二时辰》背后的吃历史：唐朝兴起的中国第四次饮食革命</h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2019-09-29<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp;&nbsp;<img src="static/picture/a764fd83bd408826962c4b9dfe7856dc.jpg" alt=""></span></p><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; 《长安十二时辰》这部剧，在内容上还原了不少历史细节。尤其是唐朝饮食文化的一些东西，让很多观众津津乐道，其中包括胡饼、羊肉、水晶柿子等等。</span></p><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">&nbsp; &nbsp; 其实，这部戏涉及的美食品种并不多。但从这些少数的美食，我们就可以管中窥豹，粗粗领略到唐朝人在“吃饭”这个大事上的时代特点。从历史发展看，唐朝正处于中国饮食历史上的第四次大变革阶段。</span><br><div style="text-align:center;"><img src="https://pics2.baidu.com/feed/a6efce1b9d16fdfaba40c3be73220f5195ee7be0.jpeg@f_auto?token=bcc70caa17bc23329705b7a74790d9c6&s=2DF869950AF3CCC41CA53C6E0300E03A" width="640" class="_1g4Ex" style="font-family:arial;font-size:12px;width:656px;border-radius:13px;"></div></span><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#333333;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;font-weight:700;"><span style="line-height:2;">中国前三次饮食革命</span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 中国的饮食历史源远流长，几千年的时间里发生过很多的演变和进步。这些演变大多是局部的、细微的、缓慢的，但每隔几百年就会产生一次巨大的变革。这种大的变革，主要是依托于烹饪器具、食物种类的变化，以及文明的交流。</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">中国历史上称得上第一次饮食革命的，应该是夏商时期开始出现的“鼎食文化”。随着青铜器的发明，传统的烹饪和食用习俗上升到了“礼”的层次。新石器时代就出现的蒸、煮、烹、炙等食物制作方式，被重新赋予了等级的烙印。通过更复杂的烹饪做法，以及饮食过程中的繁琐规定，特定的美食和器具成了王侯贵族专属的东西。</span><div style="text-align:center;"><img src="https://pics2.baidu.com/feed/1e30e924b899a9017557f5d9db38897e0308f536.jpeg@f_auto?token=2e4c999ec8ec12049696f33050c1bb8f&s=BD906B955F68E8CC18748D5A03005033" width="640" class="_1g4Ex" style="background-color:#FFFFFF;font-family:arial;font-size:12px;width:656px;border-radius:13px;"></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">&nbsp; &nbsp; 进入春秋战国时代，随着“礼崩乐坏”，又开始中国第二次饮食革命。饮食的等级性被逐步打破，食物和器具的垄断不复存在。同时，诸侯国之间的交流和兼并，让不同地区的饮食文化融会贯通，北方的饮食文化被南方的楚国、吴国所效仿，南方的一些食物也向北方传播。这个时代，人们对食物的追求就是“新意”。随着秦始皇统一天下，中国的饮食文化最终形成了“地理差异虽大，交流却永不停止”的格局，甚至直到今天也是如此。</span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 进入秦汉时期，各种农业、烹饪新技术实现全国推广，加上丝绸之路的打开，大量新物种被引进中原，中国又开始第三次饮食革命。石磨的发明，诞生了各种面食。对匈奴、南越、西域的远征，促进了各种饮食文化的传播，葡萄、黄瓜、胡萝卜等水果蔬菜大大丰富了中原的美食品种。这种演变发展过程，一直持续到了三国两晋南北朝时期，最终在隋唐时期进一步升华，又开始了中国第四次的饮食革命。</span><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><div style="text-align:center;"><img src="https://pics2.baidu.com/feed/8cb1cb13495409231803c58154f5520cb2de491e.jpeg@f_auto?token=0b2529e1f63f03e9c26d32333ab0e078&s=9F1C6E86769941CE4E92C1610300603B" width="640" class="_1g4Ex" style="background-color:#FFFFFF;font-family:arial;font-size:12px;width:656px;border-radius:13px;"></div><span style="color:#333333;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;font-weight:700;background-color:#FFFFFF;line-height:2;">唐朝开始的第四次饮食革命</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">&nbsp; &nbsp; 唐朝开始的第四次饮食革命，并不单纯地是唐朝东西方交流的结果，而是从汉朝开始的几百年各地文化交流、技术进步的集大成，以及唐朝时期更深入广泛的改造。</span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 以面食为例，小麦在西周时期就已经广泛种植，在战国晚期出现石磨后，到了汉朝才有了真正的面粉。因此，汉朝就有了中国最早的面饼、面条。随后的几百年里，中国面食的进化一直非常慢，但进化的步伐却不曾停止，各种面食做法一个一个被发明或被引进。到了唐朝终于迎来了中国面食的爆发期。</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">&nbsp; &nbsp; 唐朝史料记载：“世人皆嗜啖饼。”这可以说是当时中国人喜好面食的一个证据。唐朝最流行的饼，主要是西域做法的“胡饼”，通过烤制而成，类似现在的馕。最重要的是，唐朝对面食的改造十分丰富，在饼里添加各种佐料和馅料，不断推陈出新。现在的馅饼、烧饼、酥饼、煎饼、烙饼、泡饼等等各种样式，在当时都已经出现了原形，甚至不亚于当代的产品。</span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 说到面食，唐朝自然也有面条。但唐朝的面条尚不发达，种类也没有后世那么多，但做法和吃法已经给后世做出了样板，从而为宋代的进一步变革打下了基础。</span><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><div style="text-align:center;"><img src="https://pics7.baidu.com/feed/8718367adab44aede615756375b10404a08bfb16.jpeg@f_auto?token=b3116497e13b0795e5f00f7032326eb9&s=BA9024C7D802AA47121E09390300C04A" width="640" class="_1g4Ex" style="background-color:#FFFFFF;font-family:arial;font-size:12px;width:656px;border-radius:13px;"></div><span style="color:#333333;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;font-weight:700;background-color:#FFFFFF;line-height:2;">唐朝饮食另一个特点：对传统的扬弃</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">&nbsp; &nbsp; 唐朝在饮食方面，有一个重要的特点，那就是对传统的扬弃。扬弃，不是放弃，而是对旧传统的选择性继承和改变。由于西方、南方、北方都传播来不同的美食，再加上技术变化，新的美食种类对旧种类造成了冲击。</span><span style="line-height:2;"></span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 例如猪肉在唐朝的衰落，就是多方面原因造成的。一方面，北朝时对羊肉的推崇影响了整个社会风气，同时道家养生学说也不利于肥猪肉的口碑。再加上养猪方式和烹饪方式的落后，导致猪肉不仅不卫生，而且味道也不佳，所以唐朝的高层和民间对猪肉的热情远不如羊肉。</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">&nbsp; &nbsp; 养猪，原本是中国从八九千年前就开始发展的重要养殖技能，甚至“冷猪肉”还成为祭祀和身份的象征。但是随着社会风气的转向，猪肉在中国一度遭到冷遇，直到明朝才真正重整旗鼓。</span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 唐朝的烹饪方式也出现了扬弃现象，最典型的就是生食传统。生食，是中国古代重要的食用方式之一，地位不亚于烹、煮、蒸、炙，而且各种肉类和蔬菜都可以生食。然而，三国两晋时期瘟疫肆虐，以及两晋南北朝养生理论的发展，使得肉类生食传统在中国逐渐被放弃。尽管如此，唐朝人在“生鱼脍”这道菜上依然保持热情，尤其以鲤鱼最佳。在健康和美味两者的选择上，唐朝人放弃了多数的肉类，却顽强保留了鱼肉的生食。</span><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><div style="text-align:center;"><img src="https://pics5.baidu.com/feed/bf096b63f6246b608b37ff812d559949500fa2b9.jpeg@f_auto?token=8de82895ce329dfd1b884b589791e7ae&s=57A5B045044341450C9488C303007091" width="640" class="_1g4Ex" style="background-color:#FFFFFF;font-family:arial;font-size:12px;width:656px;border-radius:13px;"></div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 在食物种类上，唐朝似乎也是中国历史的一个重要分界线。唐朝以前和唐朝以后，能够明显看出一些传统蔬菜、谷物的衰落，以及新的品种的扩散。在唐朝以前，最流行的蔬菜是葵菜，今天却非常少见。唐朝以前不太流行的大白菜（菘），在唐朝以后由于味美、量大，种植得到迅速发展。</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;"><span style="line-height:2;">唐朝时期，有一种重要的谷物——菰米神秘消失，然而同时却诞生了一种新的蔬菜——茭白。事实上，这两者是同一种植物。</span><br></span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;line-height:2;">&nbsp; &nbsp; 李白曾诗曰：“跪进雕胡饭，月光照素盘”，说的就是菰米（雕胡米）。然而在唐朝时期，和稻子一样在浅水种植的菰，却遭遇了严重的真菌传染事件。这种病灾令菰无法开花结实，导致这种植物完全丧失了作为粮食的能力。然而戏剧性的是，遭真菌感染的菰在底部根茎发生病态膨大，这些膨大的茎味道十分鲜美，酷似嫩笋，迅速变成了一种新的蔬菜——茭白。</span><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><div style="text-align:center;"><img src="https://pics0.baidu.com/feed/8b13632762d0f703dcbb37c0ce57d2382797c5d0.jpeg@f_auto?token=f9a113b36521ddaff3827f73e5058bcf&s=910C2FFA3F28220FE4309E2D03003055" width="640" class="_1g4Ex" style="background-color:#FFFFFF;font-family:arial;font-size:12px;width:656px;border-radius:13px;"></div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;background-color:#FFFFFF;color:#222222;">&nbsp; <span style="line-height:2;">&nbsp; 可以说，唐朝的饮食文化是对此前一千年的整理和升华，同时也是为后来的一千年发展拟定了方向，或者埋下了新变革的火种。</span></span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"></blockquote><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">在宋元、明清时期，中国饮食文化还会出现多次大变革，有些文化风俗甚至重新复苏。饮食历史的演变，并不是单纯地奔往一个方向，符合大众的生活需要，满足人们对口味的</span><span style="background-color:#FFFFFF;color:#222222;font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">追求，才是真正的时代规律。</span><br><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"><blockquote style="margin:0 0 0 40px;border:none;padding:0px;"><div class="dpu8C _2kCxD " style="max-width:100%;overflow-x:visible;font-size:18px;line-height:30px;color:#222222;margin-top:24px;font-family:arial;white-space:normal;background-color:#FFFFFF;"><p style="overflow-y:auto;max-width:100%;line-height:30px;margin-top:0px !important;margin-bottom:0px !important;padding:0px !important;"><br></p></div></blockquote></blockquote><div class="dpu8C _2kCxD " style="max-width:100%;overflow-x:visible;font-size:18px;line-height:30px;color:#222222;margin-top:28px;font-family:arial;white-space:normal;background-color:#FFFFFF;"><p style="overflow-y:auto;max-width:100%;line-height:30px;margin-top:0px !important;margin-bottom:0px !important;padding:0px !important;"><span class="bjh-p" style="max-width:100%;"><span class="bjh-br" style="max-width:100%;display:block;"></span></span></p></div>                        </div>
+
+                        <section id="ar_fot">
+							                            <h6 class="fr highlight"><span>下一篇：</span><a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a></h6>
+                            <div class="clear"></div>
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

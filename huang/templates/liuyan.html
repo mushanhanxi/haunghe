@@ -1,0 +1,43 @@
+<!-- templates/message_board/message_board.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h2>留言板</h2>
+
+  <div class="card">
+    <div class="card-body">
+      {% for message in messages %}
+        <div class="mb-4">
+          <strong>{{ message.author.username }}</strong>
+          <span class="text-muted float-end">{{ message.created_at }}</span>
+          <p>{{ message.content }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>发布新留言</h3>
+
+  <form method="POST" action="{{ url_for('post_new_message') }}">
+    {{ form.csrf_token }}
+
+    <div class="form-group">
+      {{ form.content.label(class_='form-label') }}
+      {{ form.content(class_='form-control', rows='3', placeholder='请输入留言内容...') }}
+      {% if form.content.errors %}
+        <div class="invalid-feedback">
+          {% for error in form.content.errors %}
+            {{ error }}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <button type="submit" class="btn btn-primary">发布留言</button>
+  </form>
+</div>
+{% endblock %}

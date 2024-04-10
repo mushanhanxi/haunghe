@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="谢集罐子汤，原料全部采用鲁西南特有的散养青白山羊，该汤主要用羊骨、羊头肉、羊肝、羊心、羊肚等原料长时间熬汤制作，多用花椒、生姜为佐料，放入优质粉条，香气袭人，入口爽滑，久喝不腻。">
+    <title>沿着黄河吃美食 这些特色美食值得一试~ - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}" class="active">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						特色美食					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="{{ url_for('/yanhuangmeishi') }}" class="">沿黄美食</a></div>
+												<div><a href="{{ url_for('/liuyumeishi') }}" class="">流域美食</a></div>
+												<div><a href="{{ url_for('/tesemeishi') }}" class="nei_active">特色美食</a></div>
+												<div><a href="{{ url_for('/meishixinpintuijie') }}" class="">美食新品推介</a></div>
+												<div><a href="{{ url_for('/huanghemeishibolanhui') }}" class="">黄河美食博览会</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>沿着黄河吃美食 这些特色美食值得一试~</h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2021-11-15<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;山东商报·速豹新闻网记者 张蕾 马媛</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;</span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;山东商报·速豹新闻网记者梳理得知，黄河共流经山东省内9市，这些城市都有哪些特色美食？一起来看看吧——</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;菏泽</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;谢集罐子汤，原料全部采用鲁西南特有的散养青白山羊，该汤主要用羊骨、羊头肉、羊肝、羊心、羊肚等原料长时间熬汤制作，多用花椒、生姜为佐料，放入优质粉条，香气袭人，入口爽滑，久喝不腻。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;单县羊肉汤，单县羊肉汤以其色白似奶，水脂交融，质地纯净，鲜而不膻，香而不腻，烂而不黏的独特风格，被载入中华名食谱。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;曹县烧牛，曹县烧牛肉历史悠久，选料严格，选1-2年龄的鲁西南黄公牛作原料，加各种调料和小盐加以腌透，细火烧熟后晾干，再用小磨香油烹、炸，从而具有色香味美、肉质鲜嫩、香味浓郁、熟而不散的优点。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;东明香肚，一刀切开，红如玫瑰，白如奶酪，前者入口即化，后者和肠衣一起嚼碎。东明香肚承传统工艺之奥秘 , 精选优质瘦猪肉 , 名贵佐料及陈年循环老汤精工配制而成。浓香适口、香而不腻、风味独特、色泽纯正、营养丰富、老少皆宜、令人百吃不厌，回味无穷。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;郓城壮馍，壮馍吃起来色泽金黄，外焦里嫩，油而不腻，香酥可口。如果再配以葱白蒜泥，更觉鲜美异常。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;济宁</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;圣府糕点，因原产于孔府（又名圣府），为孔子后裔世代袭爵衍圣公府内自制糕点，并自成体系，故得名，又名孔府糕点。应时糕点用四时八节的季节性原料制成，其内馅甜软清馨，外皮酥脆油香。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;兖州胡辣汤，在兖州大概没什么早餐能取代胡辣汤的地位，胡椒香气一下子从鼻孔冲到头顶，也瞬间唤醒了沉睡一晚的味蕾，刚炸出的热油条表面滋着油花，咬两口感受下脆劲再往胡辣汤里一泡，就是一顿饱腹解馋的早餐。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;梁山糟鱼，是济宁市梁山县的特产。糟鱼是梁山的传统名吃。糟鱼骨酥刺面，味鲜可口，牙口不好的老年人最爱吃。黄河沿岸的居民都会做这道美食，尤以梁山糟鱼最负盛名。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;甏肉干饭，是济宁地区特色传统名小吃，甏是一种盛放食物的器皿。甏肉顾名思义，用甏盛放烹制的肉。人们把用陶器炖出来的肉和大米饭放在一起吃，别有一番风味。于是就逐步发展为今日的甏肉干饭。随着社会经济的发展，甏肉干饭不断改进创新，又增加了卷煎、面筋、肉芯丸子和鸡蛋等一系列菜品。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;济宁糁汤，流行于山东鲁西南一带，尤以济宁为最。鲜香微辣，细细的品味，又稍有一点中药的苦味，食后舌下生津，回味甘甜，特别是那淡淡的药香让人回味无穷。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;玉堂酱菜，济宁名特酱菜，清代姑苏人戴玉堂，用南方技术生产北方风味酱菜，一时被誉为"京省驰名"、"誉压江南"。主菜有包瓜、磨茄、醉蟹、糟鱼、合锦菜等，从清代至今已拥有百余年历史。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;曲阜熏豆腐，独具风味口感，凉拌、炒、炖、煮均可，又可下酒作为佐餐。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;泰安</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;煎饼，源起泰安的煎饼，已有千余年的历史。它以玉米、小米、大豆、高粱等五谷杂粮为原料，碾磨成糊状，摊烙在鏊子上边刮边烙而成。 成型后的煎饼薄如蝉翼，吃起来香软可口，是久富盛名的泰安传统食品。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;赤鳞鱼，产自泰山深潭之中，曾是清代贡品。也是我国五大贡鱼之一，属鱼中上品。烹饪常以清汆、干炸为主。因其肉质细嫩、鲜香不腻，而深受中外食客的喜爱。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;泰山三美，泰山上清冽甘淳的泉水，配上味道鲜美、营养丰富的白菜和浆细水多、质嫩不流的豆腐。三者一并相融，慢熬细炖，成就了经典的泰山三美。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;特色炒鸡，乡野小店的炒鸡选用放养在山野中的大公鸡，加上火力旺盛均匀的柴火，炒出来的鸡肉有韧度，越嚼越香，吃起来满嘴回味的都是自然的味道。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;东平粥，至今已有三百三十年的历史，可以说久负盛名。东平粥是用大豆、小麦和大米粉熬制而成。乍看似酱一样浓稠，喝到嘴里似水一般细腻，滑润爽口。东平粥具有独特的糊香味，清香甘甜，沁人心脾。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;菱粉窝头，它小如酒盅 ，以甜软、筋硬、香醇、口感好而备受人们喜食。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;聊城</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;高唐老豆腐，也叫做豆腐脑，是用大料熬制的卤子，吃地时候将豆腐脑撇入碗中，然后浇入熬制好的卤子，再倒入一勺老棉油和油炸过的辣椒，搭配上两个烧饼，吃起来那叫一个香。在聊城等地，一般都是将豆腐脑当作早饭来吃。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;聊城沙镇呱嗒，创制于清代，迄今已有200多年的历史，是一种煎烙的馅类食品。个头很大,有肉馅和鸡蛋馅,香酥可口。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;临清羊杂汤，汤汁浓稠、鲜香浓郁。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;聊城熏鸡，分为魏氏熏鸡和堠堌熏鸡两种，是山东聊城地方传统名菜，聊城熏鸡历史悠久，经大运河远销京津和大江南北，深受食客欢迎。迄今，民间仍流传着"东昌府"(今聊城)有三黑儿:"乌枣、香疙瘩和熏鸡儿"的俗语。此熏鸡色呈栗红、香醇味美、质地酥软、熏香浓郁，久贮不变质。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;莘县古城鸳鸯饼，它是用面粉和肉馅制作的肉饼，里外有8层，两两相扣所以大家都称其为鸳鸯饼，它并不是煎制而成的，而是在蒸笼里蒸熟的。皮薄馅多，味道鲜美。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;阳谷寿张肉旋子，距今已有二百多年的历史了，它从里到外一层一层的多如漩涡，故起名叫做肉旋子。在鏊子上做好的肉旋子，吃上一口又香又酥超级美味。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;冠县五香豆腐丝，冠县除了鸭梨还有五香豆腐丝也是相当的有名，在当地制作五香豆腐丝已有近百年的历史了。无论是凉拌还是炒着吃都特别的棒。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;茌平博平马蹄烧饼，当地人叫博平烧饼或吊炉烧饼。博平烧饼颜色金黄，外酥内嫩，味香口甜，风格独特。因形如马蹄，故名“马蹄烧饼”，是聊城市特有的名吃。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;济南</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;把子肉，把子肉是用五花肉制作的，看起来和酱肉相似，但是味道会更加鲜美，搭配米饭吃非常鲜香。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;草包包子,在济南是非常出名的一道美食，还获得过“名优小吃”的美誉，不仅是馅料足，它里面的汤汁也很浓郁，口感很细腻。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;孟家扒蹄,肉质软烂入味，色泽也是诱人的红棕色，吃起来醇厚鲜香。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;酥锅,在济南算是过春节必备的美食之一，类似于拼盘的美食，在济南的餐厅中很常见。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;奶汤蒲菜,有着“汤菜之冠”的称号，味道清新，吃在嘴里也很爽口。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;油旋，又叫“油旋回”，外皮酥脆，内瓤柔嫩，葱香透鼻，因其形似螺旋，表面油润呈金黄色，故名油旋。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;坛子肉,它是用瓷坛子炖制而成，加上各种酱料调制，吃起来肥而不腻。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;德州</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;糟溜鱼片，此菜肉质滑嫩，鲜中带甜，糟香四溢，深受美食家的青睐。糟是指用香糟曲加绍兴老酒、桂花卤等泡制酿造而成的香糟卤，所以烹制出的鱼片，香郁鲜嫩，味美无比。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;大柳面，大柳面是德州远近闻名的特色传统名吃，属于鲁菜系，是德州宁津的三大名吃之一，因始于大柳镇而得名，有“金丝缠碗”的美誉。吃大柳面一般是配卤子的，卤子的制作十分考究，可分为炸酱、肉卤、麻酱、海鲜、鸡蛋五种。营养丰富，易于消化，温食凉用，皆为美食。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;葱烧蹄筋，是典型的传统鲁菜，有了章丘大葱的配料，使主料的鲜嫩软滑揉进了浓浓的大葱的香甜。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;烤花搅鲑，是以鲑鱼为主料，用旺火片烤而成，德州名菜之一，另外，鲑鱼是孔府菜中的上品，所以此菜在整个山东省都广为流传，不过各地区的烹饪方法和口感略有不同。德州的烤花搅鲑鱼，除了体现了鲁菜的咸鲜特点，还有浓郁的辣椒和孜然香味，的确是不可多得的美味。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;德州扒鸡，始于清朝，传于民国，盛于当今，是享誉中外的历史名吃，悠悠三百春秋，经过十几代扒鸡艺人艰辛的经营发展，至今由地方名产成为独树一帜的中华名吃，在色、香、味、形、质、养和包装诸方面更臻完美盛名天下，被誉为“神州一奇”、“中华第一鸡”。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;德州扒鸡的特点是：形色兼优、五香脱骨、肉嫩味纯、清淡高雅、味透骨髓、鲜奇滋补。造型上两腿盘起，爪入鸡膛，双翅经脖颈由嘴中交差而出，全鸡呈卧体，色泽金黄，黄中透红，远远望去似鸭浮水，口衔羽翎，十分美观。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;滨州</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;邢家锅子，相传此饼乃清末西关一邢姓店家制作，又称"邢家锅子饼"。经过几代人的手工制作，裹特色馅，夹滨州味，邢家锅子饼让滨州人吃出了名堂。先用软面做两个小薄饼，在鏊子上烙黄备用，再用鸡蛋、熟肉、豆腐、香菜制馅，卷入饼中，稍煎，切成块食用。锅子饼呈长方形，面皮用发酵面油煎做成，包以菠菜、青辣椒、鲜虾皮、豆腐末、粉条末等制成的馅，滑酥多馅，咸鲜适口，香而不腻。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;油煎锅贴，锅贴有两种，一种油煎锅贴，一种清蒸锅贴。油煎锅贴一种是带馅，一种无馅。大小约为水饺的两倍。馅可以随自己的喜好调制。一般是猪肉（芹菜肉、萝卜肉）或素馅（白菜豆腐、素三鲜）等等。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;邹平台子火烧，刚出炉的台子火烧，看着脆黄，闻着焦香。表皮薄如纸张，碰一下就能碎掉，里皮层层叠加，咬下去劲道柔滑。待味蕾感受过脆、酥、甘、软后未免口干，可搭配西红柿鸡蛋汤。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;滨州芝麻酥糖，是山东省滨州市的特色传统名点，享誉省外，已有70多年的悠久历史，该产品是滨城常云銮祖孙三代的家传绝技，有一整套的生产工艺方式。品种由当初生产一个花色，经过逐步改进，已发展为菠萝、桔子、桂花、山楂4个不同的风味芝麻酥糖。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;沾化虾酱，又名虾糕。它是以各种小鲜虾加盐发酵后，经磨细制成的一种黏稠状酱。我国沿海凡产小虾地区均能生产。以山东滨州、河北唐山、羊角沟、浙江和广东出产最多。以滨州的沾化、无棣两县均出产虾酱，且虾酱的质量都比较高，虾酱的产销量、商品率沾化县更大一些，在外地的知名度也较高。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;无棣大山烧鸡，起源于无棣县碣石山镇（原大山镇），是颇具地方风味的滨州特产之一，因其"肉嫩味鲜，外酥内软，色泽鲜艳，风味独特"而香飘京津冀鲁。大山（现称碣石山），处在进出京津唐的冀鲁要道，路边的大山烧鸡店生意红火。许多南来北往的过客停车进店，捎上可意的大山烧鸡，闻香品鲜，馈亲赠友。整只鸡熟烂易撕，口感香而不腻，有股独特的香味。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;博兴金丝鸭蛋，蛋壳呈青色，外观圆润光滑，蛋心为红色、营养丰富。该产品的特点是蛋心为红色。优质的咸鸭蛋咸度适中、味道鲜美，老少皆宜。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;淄博</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;博山四四席，所谓“四四席”一般就是按菜肴分类的一种宴席，可供八人一桌聚餐的四平盘、四大件、四型件和四饭菜，共计十六品，无论是从筵席的内容或者是上菜程序都比较讲究，主要有以下几个特色：一讲究制汤;二讲究程序和内容;三讲究礼仪和菜品寓意;四是讲究餐具花色。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;周村烧饼，历史悠久，以薄、香、酥、脆著称。大约在明朝年间，被誉为“旱码头”的周村商贾云集，各种小吃应时而生，周村烧饼开始被人所知，到清朝前期，周村烧饼作为贡品更是名噪一时。周村烧饼形圆而薄，正面粘满芝麻仁，背面布满酥孔，如果不慎失手落地，则会立刻碎成多瓣。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;博山豆腐箱，传说清朝乾隆南巡，曾特意到博山吃豆腐箱，赞不绝口。制作豆腐箱时，先将豆腐切成六分方丁，寸二长方块，用花生油炸至金黄色捞出，再在豆腐块的一面切开一块皮（一侧不切断，起箱盖作用），挖出内里豆腐，再填上调好的馅料，盖好“箱盖”。馅料有多种多样，有三鲜馅（海米、虾仁、猪肉）、蟹黄馅、鸡肉馅等。一般多用猪肉馅、什锦馅或素馅。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;大锅全羊，关键在“全”字上。把羊的肉、骨、脏、血、头、蹄、尾、鞭一锅煮出，色、香、味俱佳、鲜嫩可口，汤汁浓郁、营养丰富、具有大补之功效，因此有肉中人参之誉。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;红烧鱼唇，制作方法是将鱼唇切大块，冬笋切片，分别在沸水中煮熟，捞出注入高汤，加料酒、盐、味精、白糖、糖色及鱼唇、香菇、冬笋片烧开，用水淀粉勾芡即成。此菜特点是芡汁红亮，绛红色，鱼唇绵软润滑，鲜美浓香。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;酱汁鸭方，菜品特点是颜色油红光亮，酱香四溢，鲜嫩适口，咸中略甜。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;博山烤肉，有着悠久传统制作工艺的博山烤肉，以其在全国绝无仅有的制作工艺及独特品位，曾作为技术文献载人《中国食品工艺制作大全》，1982年和1984年，两次被评为部优名特产品。其特点是味道醇香，肥而不腻。最受消费者欢迎的是发泡起酥，松脆金黄的肉皮和肥瘦相间的肉质。成条状挂烤的猪肉，多是除血脖和后肘以外的腰弯部分，一刀剖断，但见绛红、乳白、金黄三色相呈，脍炙香味扑鼻而来。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;博山酥鱼锅，是最具博山民间特色的名吃。过年时，几乎家家都做个酥锅，因此又叫“年下菜”。客人来了，盛上一盘酥锅当下酒菜，又快捷又方便。邻里、亲朋之间，也有相互赠送品尝的习惯，都说“尝尝我做的酥锅。”弦外之音大有博山的酥锅“舍我其谁”的意味。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;淄博烧烤，其精髓其实不在于“烤”，而是在于它的主食“小饼、小葱、辣椒酱”。刚烤好的串，蘸上辣椒放上葱卷上饼，那叫一个麻辣鲜香，多滋多味。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;东营</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;烧鸡,东营传统小吃，肉质鲜美、回味无穷。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;龙居丸子,味道鲜美、香脆可口。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;黄河口蜜桃,东营特产水果，肉汁甜美、营养丰富。</span><br><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;速豹新闻网·山东商报编辑：徐晓阳</span><br>                        </div>
+
+                        <section id="ar_fot">
+							                            <h6 class="fr highlight"><span>下一篇：</span><a href="{{ url_for('h150') }}">沿着黄河遇见美食｜这些美食，哪些来自你的家乡？</a></h6>
+                            <div class="clear"></div>
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

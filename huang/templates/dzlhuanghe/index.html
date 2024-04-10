@@ -1,0 +1,2877 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="黄河文化网,陕西省黄研会,黄河文化经济发展研究会">
+    <meta name="description" content="黄河文化网">
+    <title>黄河文化网，黄河文化经济发展研究会 - 黄河文化网--黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href=""><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+				<div><p class="nav-link">您好用户，{{ session['username'] }}！</p>
+					<br/><a class="nav-link" href="{{ url_for('logout') }}">注销</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="">首页</a></div>
+						  <div class="col nav_title text-center"><a href={{ url_for('huangyanhuigaikuang') }}>黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('xinwendongtai') }}>新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('huanghewenhua')}}>黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('huanghejingji')}}>黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('xiandaihuayanjiu')}}>现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('shengtaihuanbao')}}>生态环保</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('kejijiaoyu')}}>科技教育</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('huanghelvyou')}}>黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('huanghemeishi')}}>黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('jiankangwenhua')}}>健康文化</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('minsujieqing')}}>民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('huanghemeitu')}}>图片视频</a></div>
+						  <div class="col nav_title text-center"><a href={{url_for('huangyanhuichengyuan')}}>黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huangyanhuigaikuang')}}>黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('xinwendongtai')}}>新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huanghewenhua')}}>黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huanghejingji')}}>黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('xiandaihuayanjiu')}}>现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('shengtaihuanbao')}}>生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('kejijiaoyu')}}>科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huanghelvyou')}}>黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huanghemeishi')}}>黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('jiankangwenhua')}}>健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('minsujieqing')}}>民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huanghemeitu')}}>图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href={{url_for('huangyanhuichengyuan')}}>黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href=""><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+
+
+	<!--轮播-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-7 col-sm-12">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+				  <!-- 指示符 -->
+				  <ul class="carousel-indicators">
+										<li data-target="#demo" data-slide-to="0" class="active"></li>
+										<li data-target="#demo" data-slide-to="1"></li>
+										<li data-target="#demo" data-slide-to="2"></li>
+									  </ul>
+				  <!-- 轮播图片 -->
+				  <div class="carousel-inner">
+										<div class="carousel-item active">
+					  <a href={{url_for('h260')}}><img decoding="async" class="banner w-100" src="static/picture/6c1df2f32aeac407b3873874590e63a2.png"></a>
+					  <div class="carousel-caption text-truncate">
+						<p>天津市黄河区域经济发展合作促进会 第三届换届大会隆重召开</p>
+					  </div>
+					</div>
+										<div class="carousel-item ">
+					  <a href={{url_for('h258')}}><img decoding="async" class="banner w-100" src="static/picture/7a6b17557358c6aeb2a6ec3e025a36da.png"></a>
+					  <div class="carousel-caption text-truncate">
+						<p>黄河文化网工作汇报会在西安召开</p>
+					  </div>
+					</div>
+										<div class="carousel-item ">
+					  <a href={{url_for('h256')}}><img decoding="async" class="banner w-100" src="static/picture/656b7ac992b60e1a8fd4fdeb50165fd4.jpg"></a>
+					  <div class="carousel-caption text-truncate">
+						<p>冰河凝翡翠</p>
+					  </div>
+					</div>
+									  </div>
+				</div>
+			</div>
+			<div class="col-md-5 py-4">
+								<div class="right-news">
+					<h6 class="py-3 text-truncate"><a href={{url_for('h260')}}>天津市黄河区域经济发展合作促进会 第三届换届大会隆重召开</a></h6>
+					<small class="c91">天津市黄河区域经济发展合作促进会第三届换届大会于2024年1月9日在天津政协俱乐部胜利召开，出席换届大会的有天津市人大原副主任、天津市黄河经济发展合作促进会原会长王述祖；天津市人大原副主任、天津市黄河经济发展合作促进会原名誉会长左明；中国消防协会原秘书长、天津市黄河经济发展合作促进会顾问高伟；天津市外经局原局长、天津市黄河经济发展合作促进会原副会长胡洽经；天津市外商投资服务中心原主任、天津市黄河经</small>
+					<hr size="30">
+				</div>
+								<div class="right-news">
+					<h6 class="py-3 text-truncate"><a href={{url_for('h258')}}>黄河文化网工作汇报会在西安召开</a></h6>
+					<small class="c91">“黄河文化网”是陕西省黄河文化经济发展研究会主办的专业化、综合性网站。黄河文化网于2006年由张斌创办，2023年5月，他把创办17年的“黄河文化网”捐献给陕西省黄河文化经济发展研究会，陕西省黄研会对“黄河文化网”进行改版升级，2023年6月新版“黄河文化网”上线运行。为了办好网站，陕西省黄研会成立了“黄河文化网”编辑委员会，进行稿件的基础编辑。2023年11月22日，陕西</small>
+					<hr size="30">
+				</div>
+								<div class="right-news">
+					<h6 class="py-3 text-truncate"><a href={{url_for('h256')}}>冰河凝翡翠</a></h6>
+					<small class="c91"></small>
+					<hr size="30">
+				</div>
+							</div>
+		</div>
+	</div>
+	<!--tabs-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-sm-12">
+				<!--ad1-->
+				<div class="ad1">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+					
+					
+					
+								</div>
+				<div class=" d-none d-sm-block">
+				    
+					<!-- 代码部分begin -->
+                    <div class="tabbox">
+                    	<div class="tab my-4">
+                        	<a href="javascript:;" class="on">黄河文化</a>
+                            <a href="javascript:;">黄河经济</a>
+                            <a href="javascript:;">现代化研究</a>
+                            <a href="javascript:;">生态环保</a>
+                            <a href="javascript:;">科技教育</a>
+                            <a href="javascript:;">黄河旅游</a>
+                            <a href="javascript:;">黄河美食</a>
+                        </div>
+                        <div class="content">
+                        	<ul>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h231')}}><img decoding="async" class="img-fluid" src="static/picture/66842f7bfe0c64f937cd132519f1e639.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h231')}}>黄河情 | 张志功——在习仲勋身边工作的二十年</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>“风雨二十年，思未断，梦萦魂牵。父兄情，三生有幸，恩重如山。呕心教诲犹如昨，耳提面命声未远。已十载，独立望西天，难入眠。开国泰，辅民安。遭诬陷，志弥坚。行人间正道，义胆侠肝。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-06-06 12:49</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{ url_for('h126') }}><img decoding="async" class="img-fluid" src="static/picture/afaca3fad1b978a70be8c82dc298062d.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{ url_for('h126') }}>黄河文化论坛在东营开幕</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>4月18日上午，由中国社会科学院、中国公共关系协会、山东省人民政府共同主办的黄河文化论坛在东营市开幕。本次论坛以“弘扬黄河文化 讲好黄河故事”为主题，旨在深入学习贯彻习近平新时代中国特色社会主义思想和党的二十大精神，落实黄河流域生态保护和高质量发展重大国家战略，深入挖掘黄河文化蕴含的丰富内涵、时代价值，凝心聚力推进中国式现代化建设实践。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-24 15:48</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h140')}}><img decoding="async" class="img-fluid" src="static/picture/8554a400a9c899c59ef4211b9620b7dd.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h140')}}>开启民间对外交往新篇章 国际青少年“黄河文化”交流营开营仪式在东营举行</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>中国山东网-感知山东4月19日讯 (记者 刘自锐 杨宏泽)4月19日，国际青少年“黄河文化”交流营开营仪式在东营市青少年示范性综合实践基地(园博园)举行。该活动由省委外办、省教育厅、东营市人民政府联合主办，东营市人民政府外事办公室、东营市教育局、东营职业学院、东营市文旅集团承办。有关部门负责人、国际留学生代表、东营市青年志愿者等80余人参加</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-19 22:51</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h141')}}><img decoding="async" class="img-fluid" src="static/picture/e44337829d2ea88dfd74374f4936d2b9.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h141')}}>黄河国家文化公园应如何实现数字化深度融合？</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>“党的十八大以来，发展数字经济已上升为国家战略，我国数字经济发展走在世界前列。要把数字技术融合应用纳入黄河国家文化公园建设顶层设计。”</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-11-12 22:32</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h142')}}><img decoding="async" class="img-fluid" src="static/picture/c3fc5818375c31e8fc91ca74850a3344.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h142')}}>黄河文化研究课题数量 沿黄九省区中山东居首</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>10月31日，由山东省委省直机关工委联合省发展改革委、省生态环境厅、省文化和旅游厅、山东黄河河务局、大众报业集团主办，齐鲁晚报齐鲁壹点承办的“话黄河走在前”大型系列对话专访第三期开播，主题是保护传承弘扬黄河文化，延续历史文脉，坚定文化自信，讲好“黄河故事”，为高质量发展提供精神力量。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-11-04 09:34</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h121')}}><img decoding="async" class="img-fluid" src="static/picture/22bb943f15f82d31dd4c1680428e6c79.jpeg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h121')}}>黄河文化内涵与中国历史根脉</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河是中华民族的母亲河，黄河文化是中华文明的重要组成部分。从黄河流域灿烂的新石器文化，到“邦国”文明的诞生，到作为文化基因的正统观和“大一统”观念的形成，到礼乐文明与理性人文基因的养成，再到“自在”的中华民族的形成，这五个方面充分展示了黄河文化的丰富内涵及其历史意义。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-10-25 13:10</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h120')}}><img decoding="async" class="img-fluid" src="static/picture/64e98db9705f78264339e3871a3f2dab.jpeg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h120')}}>黄河文化：华夏文明的重要源头</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河被誉为中华民族的母亲河，在漫长岁月中养育了无数中华儿女，也孕育了华夏文明的精神特质，见证了中华民族多元一体的历史演变。探寻黄河文化的历史起源，正确认识黄河文化在世界文明和华夏文明中的地位和作用，对于推进黄河流域生态保护和高质量发展的重大国家战略，推动全党全社会增强历史自觉、坚定文化自信具有重要意义。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-10-25 12:35</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h119')}}><img decoding="async" class="img-fluid" src="static/picture/fc131698376907bb49aa15a3fd603581.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h119')}}>黄河文化符号重构与中华文化认同</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河文化是中华优秀传统文化的重要组成部分，黄河文化符号是中华文化符号体系的主体展示，黄河文化符号体系的建构是中华民族根魂的具体体现，认真研究黄河文化的符号重构，对于中华文化的认同具有重要的意义。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-05-18 12:16</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h124')}}><img decoding="async" class="img-fluid" src="static/picture/26752684fbd2d25fffeee05bfac4929f.png"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h124')}}>保护黄河非遗 山东将这样做</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>日前，为加强山东省黄河流域非物质文化遗产（以下简称“黄河非遗”）保护，山东省文化和旅游厅印发《山东省黄河流域非物质文化遗产保护传承弘扬规划》。规划对“黄河非遗”保护工作的指导思想、基本原则、总体目标、重点工作、保障措施等方面提出要求。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-01-05 15:30</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h128')}}><img decoding="async" class="img-fluid" src="static/picture/d5f24041ec5e72d796dda0709ca6abbf.png"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h128')}}>黄河文化主题·陕西省书法篆刻作品展开展</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>陕西日报 （记者 柏桦）为阐释黄河文化内涵魅力，弘扬黄河文化时代价值，12月9日，由省文化和旅游厅指导，陕西书学院主办的“黄河文化主题·陕西省书法篆刻作品展”在西安亮宝楼开展。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-12-09 10:32</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h133')}}><img decoding="async" class="img-fluid" src="static/picture/af349bf3aa09370e9e9d1423dbcfb27c.png"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h133')}}>黄河流域九省区传统戏曲展演在渭南举办</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>6月12日是2021年“文化和自然遗产日”，为贯彻落实习近平总书记关于文化和遗产保护工作系列重要讲话精神，促进黄河流域九省区文化交流，实现资源共享、优势互补，黄河流域九省区传统戏曲展演活动在渭南大剧院举办，九省区戏曲非遗艺人齐聚陕西渭南，一起讲好“黄河故事”，共同传承历史文脉。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-08-12 08:58</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h149')}}><img decoding="async" class="img-fluid" src="static/picture/29350722504716eb7e9785232a7600e5.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河文化</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h149')}}>沿黄九省区“黄河文化数字化”交流推广活动——黄河文化数字化论坛在甘肃兰州举办</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>为深入贯彻习近平总书记在黄河流域生态保护和高质量发展座谈会上的重要讲话精神，推动落实文化和旅游部对高质量发展文旅产业工作部署要求，搭建沿黄省区数字文化产业理论研讨和交流平台，提升黄河文化数字化产业转化为文旅产业发展动力，</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2020-10-28 15:35</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href={{url_for('huanghewenhua')}}>点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h259')}}><img decoding="async" class="img-fluid" src="static/picture/ce4e9f140c826f69014a0359ccda9c05.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河经济</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h259')}}>乡村行·看振兴｜陕西榆林：集体经济“金钥匙” 打开农民“致富门”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small></small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2024-01-15 14:27</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h226')}}><img decoding="async" class="img-fluid" src="static/picture/e4fd2a6fe0e9ac8435e60e315ea81b52.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河经济</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h226')}}>陕西省沿黄区域经济与文化高质量发展论坛在渭南师范学院举行</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>10月27日上午，陕西省沿黄区域经济与文化高质量发展论坛在渭南市举行。本次论坛由陕西省社会科学界联合会主办，渭南师范学院社科联承办，科学研究处、经济与管理学院协办。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2020-10-27 23:18</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href="{{ url_for('huanghejingji') }}">点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h227')}}><img decoding="async" class="img-fluid" src="static/picture/5592929550b638ea3dd46613ad4de925.jpg"></a></div>
+        									<div class="tabs_class my-2">现代化研究</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h227')}}}>“中国式现代化”需要牢固树立黄河文化意识</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>党的二十大对推动全面建设社会主义现代化高质量发展作出了战略部署。黄河流域的高质量发展，也是“中国式现代化”的主要构成和任务目标。其政治、经济、文化的逻辑起点和内生动力，都需要我们用“四个自信”给予讲清楚。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-05 08:52</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href={{url_for('xiandaihuayanjiu')}}>点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h169')}}><img decoding="async" class="img-fluid" src="static/picture/9bbd9c8396c1c9a0e675399d3c7a2e83.jpg"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h169')}}>《中华人民共和国黄河保护法》正式施行</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>4月1日起，《中华人民共和国黄河保护法》正式施行。黄河保护法是中国第二部流域法律，于2022年10月30日经全国人大常委会会议表决通过。此前，中国第一部流域法律——长江保护法已于2021年3月1日起施行。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-05-09 20:29</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h161')}}><img decoding="async" class="img-fluid" src="static/picture/37cb0ab275bfc416816f39d2c5a6be10.jpg"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h161')}}>通过工程和生物措施，阿坝推进黄河流域生态保护治理—— 筑好绿色“长城” 守护一河碧水</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>在阿坝州若尔盖县唐克镇，黄河在若尔盖大草原“美丽回眸”，勾勒出黄河九曲第一湾。看日出、云海、黄河美景，这里每年都吸引着不少游客前来。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-10-15 17:46</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h155')}}><img decoding="async" class="img-fluid" src="static/picture/82cb6b70e6f1b0864cc55954e1a56305.jpg"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h155')}}>黄河安澜丨调水治沙飞鸟落 小浪底：治黄的关键工程</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>万里黄河，纳百川浩瀚。黄河是中华民族的母亲河、生命河，也是一条桀骜难驯的忧患之河。黄河径流泥沙含量世界居首，大量泥沙淤积在下游河床上，形成地上悬河，每当汛期来临或突发洪水，极易决溢改道。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-09-16 00:42</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h164')}}><img decoding="async" class="img-fluid" src="static/picture/d9ed1d8c8b9a3faf7de04eb3a8a00eb4.jpg"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h164')}}>黄土 黄河 黄帝：黄河流域生态文明与历史文化展览</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>2022年7月15日，在陕西历史博物馆第七展厅，以“黄土 黄河 黄帝”为主题的黄河流域生态文明与历史文化展览开幕。这里汇集了陕西省、青海省、四川省、甘肃省、山西省、河南省、山东省、内蒙古自治区、宁夏自治区等13家博物馆的180多件珍贵文物和相关展品——</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-07-25 11:47</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h162')}}><img decoding="async" class="img-fluid" src="static/picture/f5e5d553e8e9a42f633d999ba94bc182.png"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h162')}}>总投资5.32亿元 陕西坚持项目引领抓好黄河流域生态保护修复工作</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>4月26日上午，陕西省人民政府新闻办公室举办新闻发布会，会上，陕西省自然资源厅国土空间生态修复处负责人魏宏安，就陕西省在推动黄河流域生态保护修复方面的工作和成效，做了详细介绍。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-04-26 17:56</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h168')}}><img decoding="async" class="img-fluid" src="static/picture/e78ff66f2c89efa5ff664faf450e3612.png"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h168')}}>黄河流域“清废行动”清理各类固废近900万吨</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>记者从生态环境部30日召开的例行新闻发布会获悉：2021年黄河流域“清废行动”应用卫星和无人机遥感技术，</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-03-31 08:21</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h167')}}><img decoding="async" class="img-fluid" src="static/picture/2f53062783b833cf489c9ec15ac962d6.jpg"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h167')}}>黄河源头18年再没有发生断流现象</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>3月22日至28日是第三十五届“中国水周”，主题为“推进地下水超采综合治理 复苏河湖生态环境”。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-03-29 09:06</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h166')}}><img decoding="async" class="img-fluid" src="static/picture/f8d1d8abc9343deeaf4afaef59be9cf8.png"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h166')}}>“黄河流域湿地保护战略与优先行动”项目指导委员会第一次会议在京召开</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>3月16日上午，由保尔森基金会、内蒙古老牛慈善基金会和中国科学院地理科学与资源研究所联合主办的“黄河流域湿地保护战略与优先行动”项目指导委员会第一次会议在京召开。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-03-21 08:47</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h153')}}><img decoding="async" class="img-fluid" src="static/picture/c276570330e33995ccec99da8305f7f6.png"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h153')}}>全面提升黄河流域大保护和大治理能力</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>推进黄河流域生态保护和高质量发展重大国家战略，对于实现“两个一百年”奋斗目标、实现中华民族伟大复兴具有重要意义。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-11-02 09:17</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href={{url_for('h163')}}}><img decoding="async" class="img-fluid" src="static/picture/0cb5e69422ac9507d13cd334d94c72c6.png"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href={{url_for('h163')}}>厚植生态底色，绘就黄河流域生态保护和高质量发展滨州画卷</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>央广网滨州9月26日消息(记者王成林 滨州台记者邹朝阳)滨州市深入落实黄河流域生态保护和高质量发展战略，统筹黄河河道、岸线和滩区生态建设，建设黄河绿色生态走廊，加快绘就黄河流域生态保护和高质量发展的滨州画卷。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-09-26 20:42</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h154') }}"><img decoding="async" class="img-fluid" src="static/picture/8e44e26de18d791549f4316c8fc255bd.png"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h154') }}">163名“生态警长”守护黄河入海口</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>“湿地茫茫，芦荻苍苍。鹳鹤伴舞，鸥鹭集翔。”黄河三角洲国家级自然保护区野生动植物资源丰富，是濒危珍稀鸟类迁徙的中转站和繁殖地，然而这也成为不法分子谋求暴利的对象。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-04-30 11:08</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h165') }}"><img decoding="async" class="img-fluid" src="static/picture/31ad305dde04cdc66b260a0954f0df36.jpg"></a></div>
+        									<div class="tabs_class my-2">生态环保</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h165') }}">擦亮黄河文化的生态底色</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>在内容丰富的黄河文化中，生态文明是一以贯之的亮丽底色，沿黄地区古代先民的水利开发、农业生产皆围绕“人与自然和谐共生”这一时代主题而展开。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2020-12-01 18:24</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href="{{ url_for('shengtaihuanbao') }}">点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h186') }}"><img decoding="async" class="img-fluid" src="static/picture/e6457f0aca1d1d7bb0ace59315455647.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h186') }}">北斗卫星家族添新成员 陕西力量助卫星导航“升级”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>中新网西安5月17日电 (杨英琦 张一辰)17日，北斗卫星导航系统第五十六颗卫星成功发射。航天科技集团五院西安分院(以下简称：西安分院)承担了该卫星导航分系统、天线分系统、转发分系统、星间链路子系统等全部有效载荷以及部分测控单机的研制任务。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-05-18 10:13</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h181') }}"><img decoding="async" class="img-fluid" src="static/picture/adea1b58d800308b5a7b10dae95ba8f9.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h181') }}">2023年陕西省学生资助工作会议召开</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>2023年5月6日，陕西省学生资助工作会议在西安召开，省委教育工委委员、省教育厅副厅长王海波出席会议并讲话。省教育厅、省财政厅、国家开发银行陕西省分行等相关负责人出席会议。会议由省委教育工委、省教育厅二级巡视员杨盛涛主持，西北政法大学校长范九利致辞。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-05-08 09:37</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h178') }}"><img decoding="async" class="img-fluid" src="static/picture/12e2c6ee8f1253628ed686cd31f76fa5.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h178') }}">西安首届民办教育展暨第四届国际教育创新论坛</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>“教育展挺接地气的，有我想要咨询和了解的学校。通过参加教育展，让我对民办学校有了一定的了解。”全程参加西安首届民办教育展暨第四届国际教育创新论坛的西安市未央区先锋小学六年级学生何易霏的妈妈王女士说。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-24 10:30</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h180') }}"><img decoding="async" class="img-fluid" src="static/picture/058c30e190fa308c562ab3bfe6e24312.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h180') }}">桃花园里“上课” 大自然中“学习”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>为落实“双减”政策，推进“五育并举”，提升学生的综合知识水平和实践能力，近日，鄠邑区北街小学以柳泉村桃花为契机开展了秦腔为主题的综合实践活动。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-11 11:20</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h177') }}"><img decoding="async" class="img-fluid" src="static/picture/7bcbc365aeb9ee8dc331c8987aa2543e.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h177') }}">陕西省规范民办义务教育发展工作推进会召开</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>2022年5月31日下午,陕西省规范民办义务教育发展工作领导小组召开规范民办义务教育发展工作推进会。省规范民办义务教育发展工作领导小组副组长、省委教育工委书记王建利出席会议并讲话。省教育厅副厅长赵昶葆通报全省工作进展情况和存在问题。西安、咸阳、渭南、延安等4个市汇报工作情况，全体参会人员就重点工作进行交流讨论。会议由省规范民办义务教育发展小组办公室主任、省教育厅副厅长高岭主持。 </small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-06-02 10:30</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h185') }}"><img decoding="async" class="img-fluid" src="static/picture/1b289d72ef630c0956651a8deb1a4517.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h185') }}">新华社：我国本土葡萄酒酵母完成“从0到1”的突破</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>新华社西安5月27日电（姚友明、李晓春）记者27日从西北农林科技大学获悉，由西北农林科技大学葡萄酒学院刘延琳教授团队培育的两株本土葡萄酒酵母实现我国本土葡萄酒酵母“从0到1”的突破，解决了我国葡萄酒酵母长期以来存在的“卡脖子”技术隐患与产业风险，为我国葡萄酒产业的“微生物种业”安全提供了技术保障。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-05-26 12:12</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h184') }}"><img decoding="async" class="img-fluid" src="static/picture/b6c4d803a79acc4babe511e77a1c740d.jpeg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h184') }}">科技日报：新一代人工晶状体研究成果 获ASCRS发布</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>科技日报讯（记者史俊斌）享誉全球眼科学术界的“2022美国白内障和屈光外科学会（ASCRS）大会”近日在美国华盛顿举行，西安高新区入驻企业——西安眼得乐医疗科技有限公司在会上连续发布了3篇关于全新一代生物材料“交联聚烯烃”人工晶状体的研究成果。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-05-25 12:05</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h179') }}"><img decoding="async" class="img-fluid" src="static/picture/b830643a0acf05bddc9acaf6b3dfbf34.png"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h179') }}">西安外国语大学“六个聚焦”助推乡村振兴</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>西安外国语大学以巩固拓展脱贫攻坚成果同乡村振兴有效衔接为目标，立足工作实际，聚力推进、提质增效，以“六个聚焦”，开展结对帮扶助推乡村振兴。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-03-28 08:54</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h183') }}"><img decoding="async" class="img-fluid" src="static/picture/f605698c3f8054bbba5f953ec39ed0df.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h183') }}">陕西杨凌：为“秦创原”注入农科“芯片”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>10月22日至26日，秦创原创新驱动平台展作为今年农高会上新增加的展览展示内容之一，通过展板、实物等形式展示了秦创原创新驱动平台的特点与内涵、秦创原农业板块的建设内容、杨凌涉农企业在成果转化方面的实例，以及杨凌加速产业链创新链深入融合、科技创新和产业推广方面开展的工作。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-10-28 16:20</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h182') }}"><img decoding="async" class="img-fluid" src="static/picture/796b67368cfff64f05d37dab9d086d58.png"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h182') }}">“检阅”玉米新品种，打好种业“翻身仗”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>为解决种业发展“卡脖子”问题，坚决打好种业翻身仗。2021年9月22—25日，我省举办了玉米新品种示范展示和观摩活动。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-09-27 14:53</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h172') }}"><img decoding="async" class="img-fluid" src="static/picture/add28826569933dfdbfd518a1b867dd7.jpeg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h172') }}">让职业教育成为人才振兴“新引擎”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>近日，习近平总书记对职业教育工作作出重要指示强调，在全面建设社会主义现代化国家新征程中，职业教育前途广阔、大有可为。要坚持党的领导，坚持正确办学方向，坚持立德树人，优化职业教育类型定位，深化产教融合、校企合作，深入推进育人方式、办学模式、管理体制、保障机制改革，稳步发展职业本科教育，建设一批高水平职业院校和专业，推动职普融通，增强职业教育适应性，加快构建现代职业教育体系，培养更多高素质技术技能人才、能工巧匠、大国工匠。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-04-22 09:07</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h176') }}"><img decoding="async" class="img-fluid" src="static/picture/7030399f5e8a873bcad1aa2dc15bdf7c.jpg"></a></div>
+        									<div class="tabs_class my-2">科技教育</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h176') }}">陕西省民办教育系统学习贯彻党的十九届五中全会精神</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>2020年12月16日下午，陕西省民办教育系统学习贯彻党的十九届五中全会精神暨陕西省民办教育协会2020年年会在西安召开。省委教育工委、省教育厅一级巡视员朱征南出席并讲话。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2020-12-18 14:57</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href="{{ url_for('kejijiaoyu') }}">点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h237') }}"><img decoding="async" class="img-fluid" src="static/picture/6bea343449aaadef700915d74b877c56.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h237') }}">黄河主题旅游海外推广季｜“看九曲黄河 听华夏故事”主题展——造中华文脉篇</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河流经青海、四川、甘肃、宁夏、内蒙古、陕西、山西、河南、山东中国九省、区，千百年来，黄河奔腾向前，不舍昼夜，哺育着中华民族，孕育了中华文明。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-08-14 13:02</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h137') }}"><img decoding="async" class="img-fluid" src="static/picture/cec99a954b1a982e75a4bc58a16e9e3f.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h137') }}">第二十八届三门峡黄河文化旅游节开幕</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>新华网郑州5月20日电（范作言）黄河之滨襄盛会，崤函焕彩迎客来。5月19日晚，2023“中国旅游日”河南主会场启动仪式、第二十八届三门峡黄河文化旅游节·第九届中国特色商品博览交易会开幕式、“圣地仰韶·花开中国”文艺演出在三门峡国际文博城举行。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-05-21 16:24</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h136') }}"><img decoding="async" class="img-fluid" src="static/picture/3bc6d22611614cba0d7fac005ecf31ae.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h136') }}">“相约黄河畔，畅游三门峡” 第二十八届三门峡黄河文化旅游节·第九届 中国特色商品博览交易会即将举办</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>2023年5月6日下午，河南省政府新闻办召开第28届三门峡黄河文化旅游节·第9届特色商品博览交易会新闻发布会，介绍和解读第28届三门峡黄河文化旅游节·第9届特色商品博览交易会的相关情况。中共三门峡市委副书记、市人民政府市长徐相锋，河南省文化和旅游厅党组成员、副厅长周耀霞，省商务厅二级巡视员费全发，河南省体育局群众体育处处长孙甜甜，中共三门峡市委副书记、组织部部长吴海燕参加了新闻发布会，河南省委宣传部副部长、省政府新闻办主任平萍主持发布会。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-05-08 16:22</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h130') }}"><img decoding="async" class="img-fluid" src="static/picture/288cd5ae0e355be27ca3bb62d5dabf87.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h130') }}">青岛实验高中开展“黄河之约”研学，900多名师生跨越1800余公里——在行进中涵养学生“大我”情怀</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>滚滚黄河万年长，绵绵华夏文明始。黄河流域是中华文明起源和发展的核心地区，黄河文化凝聚着中华优秀传统文化的核心要素。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-24 16:03</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h222') }}"><img decoding="async" class="img-fluid" src="static/picture/0b6e8fb9b20195c5eb867c25849e1856.jpeg"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h222') }}">郑州三门峡携手打造精品黄河文化旅游带</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>2023年3月21日，三门峡文化旅游（郑州）推介会举行。省文化和旅游厅副厅长周耀霞，三门峡市委常委、宣传部长、副市长吴海燕，郑州市副市长陈红民出席推介会。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-03-22 09:16</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h220') }}"><img decoding="async" class="img-fluid" src="static/picture/818dd3dfa66bcbc62bd73ec847edced6.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h220') }}">邵丽代表：讲好“黄河故事” 全域打造黄河文化旅游带</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>人民网郑州3月12日电(记者王玉兴)“黄河是我们的母亲河，黄河文化内涵十分丰富，不仅包含了民为邦本、天人合一的传统思想，更涵盖了海纳百川、兼容并包、和谐共生、开放创新的时代理念与民族精神。”</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-03-12 08:20</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h132') }}"><img decoding="async" class="img-fluid" src="static/picture/7cd7fa6097deed9bc762f31b9e783767.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h132') }}">看黄河有哪些景点 黄河好玩的景区景点</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河源头之一卡日曲是以五个泉眼开始的，另一个源头是玛曲，仅有一个泉眼。这是黄河的源头地区，旅游者在这里根本无法想像黄河之宗竟不是滔滔洪水，而是一股股细微的清泉和一片有许多砂砾野草的温林荒滩。黄河源头风光宜人，水草丰美，湖泊，小溪星罗棋布，甚为壮观。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-02-10 16:11</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h225') }}"><img decoding="async" class="img-fluid" src="static/picture/9904dd3ab046077e5f24c21ce9b7d40e.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h225') }}">第四次黄河文化暨十字型黄河文化旅游带研讨会 在西安成功召开</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>陕西省黄河文化经济发展研究会于2022年12月8日在西安成功召开了第四次黄河文化暨“十字型”黄河文旅游带研讨会。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-12-09 13:36</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h135') }}"><img decoding="async" class="img-fluid" src="static/picture/2337f9b614fd49908ef9cd92f39eecd8.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h135') }}">沿黄河来旅游！ 跟着这三条“黄河文化”特色主题游线路打卡黄河美景</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>大河网讯（记者 刘杨）将黄河流域河南段富集的文化和旅游资源，转化为游客可亲近、可感知、可体验的文旅产品。12月25日，大河网记者从河南省政府新闻办举行的“春满中原 老家河南”主题系列活动新闻发布会上获悉，为了推进黄河文化遗产的系统保护，深入挖掘黄河文化蕴含的时代价值，讲好“黄河故事”，延续历史文脉，坚定文化自信，河南省文化和旅游厅挖掘整理了“黄河文化”三条特色主题游。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-12-05 16:19</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h125') }}"><img decoding="async" class="img-fluid" src="static/picture/a0fb6e6499444d0ff3d3ce9104ab30d1.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h125') }}">10条文化旅游线路带您发现黄河之美</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>11月11日，山东省文化和旅游厅发布10条黄河文化主题旅游线路，带您探寻黄河文脉、感受诗意栖居、品鉴黄河美食、发现黄河之美，快看看淄博都有哪些地方上榜了吧！</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-11-14 15:41</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h134') }}"><img decoding="async" class="img-fluid" src="static/picture/ff6b80d8f98f9cf902d96e7aaf011da8.png"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h134') }}">山东发布10条黄河文化主题旅游线路</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河在山东，流经九市，蜿蜒千里，哺育齐鲁儿女，润泽山东大地。10条黄河文化主题旅游线路带您探寻黄河文脉、感受诗意栖居、品鉴黄河美食、发现黄河之美。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-11-11 16:13</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h219') }}"><img decoding="async" class="img-fluid" src="static/picture/8e1d9030ab51932473f0827da3ad1273.jpg"></a></div>
+        									<div class="tabs_class my-2">黄河旅游</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h219') }}">滨州：打造具有国际影响力的黄河文化旅游带</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>深秋时节，滨州黄河小街湾景区游人如潮，游客漫步在美景中，或伫立岸边凭栏远眺，尽览与黄河遥相呼应的壮阔气象；每逢假期，气势恢宏的黄鹤楼更加热闹，游人三五成群来此观光旅游，品读着黄河文化及其依水而建、缘水而兴、因水而美的城市故事.....</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2022-11-03 16:53</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href="{{ url_for('huanghelvyou') }}">点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            	<li>
+                            	    <div class="row">
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h146') }}"><img decoding="async" class="img-fluid" src="static/picture/751053ec11c74f1ffcdc21225a77f7a6.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h146') }}">闪电评论丨赶“黄河大集”，品“山东味道”，悟“千年古韵”</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>4月18日上午，由中国社会科学院、中国公共关系协会、山东省人民政府共同主办的黄河文化论坛在东营市开幕。作为黄河文化论坛的配套活动，2023山东省春季黄河大集也已于4月17日开集。品美食、买手造、看展演、逛美景……一个大集上，就能逛遍九曲黄河沿岸特色美食、非遗、民俗。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-19 16:56</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h145') }}"><img decoding="async" class="img-fluid" src="static/picture/bddcac4f2b7d68d150c0a14e5d3d79db.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h145') }}">舌尖上的黄河来了！逛黄河大集，品黄河美食</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>赶春季黄河大集，采一年美好希望。4月17日下午，2023山东省春季黄河大集启动暨清风湖夜市开市仪式在东营举行。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-18 16:53</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h143') }}"><img decoding="async" class="img-fluid" src="static/picture/61d461ddb53142afae5581fec7810f8f.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h143') }}">沿黄九省区美食齐聚黄河大集，一碗疙瘩汤“杀”出重围！ </a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>对于很多人来说，赶大集是灵魂深处最深的印记。4月18日至19日，黄河文化论坛在山东东营举办。作为黄河文化论坛的配套活动，2023山东省春季黄河大集热热闹闹开集了！</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-18 16:47</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h156') }}"><img decoding="async" class="img-fluid" src="static/picture/785fbecd4e2f07e6e73951e14ff5661d.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h156') }}">​第三届吴忠早茶美食文化节中国黄河流域美食大联展筹备工作有序推进 </a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>日前，由市市场监管局牵头负责的第三届吴忠早茶美食文化节中国黄河流域美食大联展已完成招商任务，全面进入布展阶段，各项筹备工作顺利推进。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-14 17:30</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h150') }}"><img decoding="async" class="img-fluid" src="static/picture/83d1f174bf08d5335288f9c949ec0959.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h150') }}">沿着黄河遇见美食｜这些美食，哪些来自你的家乡？</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河在山东，奔腾628公里直入大海，直接滋养菏泽、济宁、泰安、聊城、济南、德州、滨州、淄博、东营九地市，惠泽两岸。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-04-11 17:04</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h157') }}"><img decoding="async" class="img-fluid" src="static/picture/1b6eb8bebf98446c1970e2d2777a1263.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h157') }}">我在包头等你  黄河文化旅游美食季暨首届开河鱼节启幕</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>本次活动由19项大型活动、99场小型活动构成，活动将持续2个月。通过开展一系列活动，将充分挖掘黄河文化、农家文化体验等文旅资源，把文旅产业做优做活，尽快把包头名气打出去，把包头人气聚上来，将黄河开河鱼节打造成包头春季旅游品牌，推动我市文化旅游及餐饮业健康发展</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2023-03-20 17:32</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h151') }}"><img decoding="async" class="img-fluid" src="static/picture/498109e2857ad54197e2768b67b17ddc.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h151') }}">接住！来自黄河流域的鲜嫩暴击，这块战斧羊排香到流口水！</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>想吃羊排吗？从小食百草、饮井水养在黄河流域的那种  </small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-11-19 17:07</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h148') }}"><img decoding="async" class="img-fluid" src="static/picture/ba1efdab08309ca799476632ec6c2e32.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h148') }}">沿着黄河吃美食 这些特色美食值得一试~</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>谢集罐子汤，原料全部采用鲁西南特有的散养青白山羊，该汤主要用羊骨、羊头肉、羊肝、羊心、羊肚等原料长时间熬汤制作，多用花椒、生姜为佐料，放入优质粉条，香气袭人，入口爽滑，久喝不腻。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-11-15 17:02</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h158') }}"><img decoding="async" class="img-fluid" src="static/picture/b59e72057abf5fc379c81effa845ee14.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h158') }}">打卡沿黄美食、飞跃壶口瀑布，来博览会领略九曲黄河古今风情</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河落天走东海，万里写入胸怀间。自西向东，在黄河流经的9个省（区）土地上，一场关于黄河文旅协同发展的新画卷正在第二届中国国际文化旅游博览会徐徐展开。9月17 日，博览会沿黄文旅展区持续为市民呈现着九曲黄河的古今风情。较去年不同的是，本届展区汇集了青海牦牛肉干、甘肃兰州拉面、山东“盘丝饼”等众多特产美食，市民们可以在现场一边打卡美食，一边“沉浸式”体验黄河的波涛汹涌，尽览九曲黄河的风情画卷。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-09-17 17:34</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h144') }}"><img decoding="async" class="img-fluid" src="static/picture/d6f42202c1e8bbf9e9b85eda3f17c145.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h144') }}">黄河文化月|打卡“沿黄九省市”美食，你最爱的家乡美食是什么？</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>　4月6日，一场关于美食的battle赛在网络上悄然兴起。正观新闻记者注意到，这不仅是河南、青海、四川等“沿黄九省市”的一次PK，更是“沿黄”区域间的一场美食接力赛，还是“沿黄九省市”的一次联动。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-04-07 16:48</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h147') }}"><img decoding="async" class="img-fluid" src="static/picture/7a5e1d2a7f77420f6118d81160f09235.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h147') }}">走遍黄河两岸，各色美食让人欲罢不能，一天吃五顿饭都不嫌多</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>5464公里的黄河从青藏高原缓缓而来，一路穿山越岭，滋润了广袤的土地，创造出独具特色的黄河文化，同时也创造了拥有黄河特色的饮食文化、饮食习俗。在这5464公里的黄河沿岸，究竟有哪些美食不容错过呢？</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2021-03-24 16:59</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-4 mt-4">
+        									<div class="tabs_img"><a href="{{ url_for('h152') }}"><img decoding="async" class="img-fluid" src="static/picture/02d1213bcd1e64982b3a9278a2528990.png"></a></div>
+        									<div class="tabs_class my-2">黄河美食</div>
+        									<hr class="hr" size="30">
+        									<div class="tabs_title ls2 my-2">
+        										<a href="{{ url_for('h152') }}">黄河孕育的美食，你吃过几种？</a>
+        									</div>
+        									<div class="tabs_desc ls2">
+        										<small>黄河是华夏文明的起源地之一，它的黄河水灌溉着农田，也养育着很多属于它的物种。</small>
+        									</div>
+        									<div class="tabs_desc float-right my-1">
+        										<small>发表于 2018-09-09 17:12</small>
+        									</div>
+        								</div>
+        								        								<div class="col-md-12 tabs_more my-5 py-5 text-center"><a href="{{ url_for('huanghemeishi') }}">点击加载更多</a></div>
+        							</div>	
+                            	</li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+				
+				
+				
+				
+				<div class="d-block d-sm-none ">
+					<ul class="nav nav-tabs my-4" id="myTab" role="tablist">
+						<li class="nav-item  text-center align-self-center">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#menu1" role="tab">
+								<h6>黄河文化</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#menu2" role="tab">
+								<h6>黄河经济</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu3" role="tab">
+								<h6>现代化研究</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu4" role="tab">
+								<h6>生态环保</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu5" role="tab">
+								<h6>科技教育</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu6" role="tab">
+								<h6>黄河旅游</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu7" role="tab">
+								<h6>黄河美食</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu8" role="tab">
+								<h6>健康文化</h6>
+							</a>
+						</li>
+						<li class="nav-item  text-center">
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu9" role="tab">
+								<h6>民俗节庆</h6>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="tab-content d-block d-sm-none " id="myTabContent">
+					<div class="tab-pane fade show active" id="menu1">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h231') }}"><img decoding="async" class="img-fluid" src="static/picture/66842f7bfe0c64f937cd132519f1e639.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h231') }}">黄河情 | 张志功——在习仲勋身边工作的二十年</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>“风雨二十年，思未断，梦萦魂牵。父兄情，三生有幸，恩重如山。呕心教诲犹如昨，耳提面命声未远。已十载，独立望西天，难入眠。开国泰，辅民安。遭诬陷，志弥坚。行人间正道，义胆侠肝。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-06-06 12:49</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h126') }}"><img decoding="async" class="img-fluid" src="static/picture/afaca3fad1b978a70be8c82dc298062d.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h126') }}">黄河文化论坛在东营开幕</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>4月18日上午，由中国社会科学院、中国公共关系协会、山东省人民政府共同主办的黄河文化论坛在东营市开幕。本次论坛以“弘扬黄河文化 讲好黄河故事”为主题，旨在深入学习贯彻习近平新时代中国特色社会主义思想和党的二十大精神，落实黄河流域生态保护和高质量发展重大国家战略，深入挖掘黄河文化蕴含的丰富内涵、时代价值，凝心聚力推进中国式现代化建设实践。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-24 15:48</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h140') }}"><img decoding="async" class="img-fluid" src="static/picture/8554a400a9c899c59ef4211b9620b7dd.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h140') }}">开启民间对外交往新篇章 国际青少年“黄河文化”交流营开营仪式在东营举行</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>中国山东网-感知山东4月19日讯 (记者 刘自锐 杨宏泽)4月19日，国际青少年“黄河文化”交流营开营仪式在东营市青少年示范性综合实践基地(园博园)举行。该活动由省委外办、省教育厅、东营市人民政府联合主办，东营市人民政府外事办公室、东营市教育局、东营职业学院、东营市文旅集团承办。有关部门负责人、国际留学生代表、东营市青年志愿者等80余人参加</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-19 22:51</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h141') }}"><img decoding="async" class="img-fluid" src="static/picture/e44337829d2ea88dfd74374f4936d2b9.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h141') }}">黄河国家文化公园应如何实现数字化深度融合？</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>“党的十八大以来，发展数字经济已上升为国家战略，我国数字经济发展走在世界前列。要把数字技术融合应用纳入黄河国家文化公园建设顶层设计。”</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-11-12 22:32</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h142') }}"><img decoding="async" class="img-fluid" src="static/picture/c3fc5818375c31e8fc91ca74850a3344.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h142') }}">黄河文化研究课题数量 沿黄九省区中山东居首</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>10月31日，由山东省委省直机关工委联合省发展改革委、省生态环境厅、省文化和旅游厅、山东黄河河务局、大众报业集团主办，齐鲁晚报齐鲁壹点承办的“话黄河走在前”大型系列对话专访第三期开播，主题是保护传承弘扬黄河文化，延续历史文脉，坚定文化自信，讲好“黄河故事”，为高质量发展提供精神力量。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-11-04 09:34</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h121') }}"><img decoding="async" class="img-fluid" src="static/picture/22bb943f15f82d31dd4c1680428e6c79.jpeg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h121') }}">黄河文化内涵与中国历史根脉</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河是中华民族的母亲河，黄河文化是中华文明的重要组成部分。从黄河流域灿烂的新石器文化，到“邦国”文明的诞生，到作为文化基因的正统观和“大一统”观念的形成，到礼乐文明与理性人文基因的养成，再到“自在”的中华民族的形成，这五个方面充分展示了黄河文化的丰富内涵及其历史意义。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-10-25 13:10</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h120') }}"><img decoding="async" class="img-fluid" src="static/picture/64e98db9705f78264339e3871a3f2dab.jpeg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h120') }}">黄河文化：华夏文明的重要源头</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河被誉为中华民族的母亲河，在漫长岁月中养育了无数中华儿女，也孕育了华夏文明的精神特质，见证了中华民族多元一体的历史演变。探寻黄河文化的历史起源，正确认识黄河文化在世界文明和华夏文明中的地位和作用，对于推进黄河流域生态保护和高质量发展的重大国家战略，推动全党全社会增强历史自觉、坚定文化自信具有重要意义。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-10-25 12:35</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h119') }}"><img decoding="async" class="img-fluid" src="static/picture/fc131698376907bb49aa15a3fd603581.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h119') }}">黄河文化符号重构与中华文化认同</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河文化是中华优秀传统文化的重要组成部分，黄河文化符号是中华文化符号体系的主体展示，黄河文化符号体系的建构是中华民族根魂的具体体现，认真研究黄河文化的符号重构，对于中华文化的认同具有重要的意义。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-05-18 12:16</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h124') }}"><img decoding="async" class="img-fluid" src="static/picture/26752684fbd2d25fffeee05bfac4929f.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h124') }}">保护黄河非遗 山东将这样做</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>日前，为加强山东省黄河流域非物质文化遗产（以下简称“黄河非遗”）保护，山东省文化和旅游厅印发《山东省黄河流域非物质文化遗产保护传承弘扬规划》。规划对“黄河非遗”保护工作的指导思想、基本原则、总体目标、重点工作、保障措施等方面提出要求。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-01-05 15:30</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h128') }}"><img decoding="async" class="img-fluid" src="static/picture/d5f24041ec5e72d796dda0709ca6abbf.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h128') }}">黄河文化主题·陕西省书法篆刻作品展开展</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>陕西日报 （记者 柏桦）为阐释黄河文化内涵魅力，弘扬黄河文化时代价值，12月9日，由省文化和旅游厅指导，陕西书学院主办的“黄河文化主题·陕西省书法篆刻作品展”在西安亮宝楼开展。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-12-09 10:32</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h133') }}"><img decoding="async" class="img-fluid" src="static/picture/af349bf3aa09370e9e9d1423dbcfb27c.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h133') }}">黄河流域九省区传统戏曲展演在渭南举办</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>6月12日是2021年“文化和自然遗产日”，为贯彻落实习近平总书记关于文化和遗产保护工作系列重要讲话精神，促进黄河流域九省区文化交流，实现资源共享、优势互补，黄河流域九省区传统戏曲展演活动在渭南大剧院举办，九省区戏曲非遗艺人齐聚陕西渭南，一起讲好“黄河故事”，共同传承历史文脉。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-08-12 08:58</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h149') }}"><img decoding="async" class="img-fluid" src="static/picture/29350722504716eb7e9785232a7600e5.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h149') }}">沿黄九省区“黄河文化数字化”交流推广活动——黄河文化数字化论坛在甘肃兰州举办</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>为深入贯彻习近平总书记在黄河流域生态保护和高质量发展座谈会上的重要讲话精神，推动落实文化和旅游部对高质量发展文旅产业工作部署要求，搭建沿黄省区数字文化产业理论研讨和交流平台，提升黄河文化数字化产业转化为文旅产业发展动力，</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2020-10-28 15:35</small>
+    									</div>
+									</div>
+								</div>
+																<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('huanghewenhua') }}">点击加载更多</a></div>
+							</div>	
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu2">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h259') }}"><img decoding="async" class="img-fluid" src="static/picture/ce4e9f140c826f69014a0359ccda9c05.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h259') }}">乡村行·看振兴｜陕西榆林：集体经济“金钥匙” 打开农民“致富门”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small></small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2024-01-15 14:27</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h226') }}"><img decoding="async" class="img-fluid" src="static/picture/e4fd2a6fe0e9ac8435e60e315ea81b52.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h226') }}">陕西省沿黄区域经济与文化高质量发展论坛在渭南师范学院举行</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>10月27日上午，陕西省沿黄区域经济与文化高质量发展论坛在渭南市举行。本次论坛由陕西省社会科学界联合会主办，渭南师范学院社科联承办，科学研究处、经济与管理学院协办。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2020-10-27 23:18</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('huanghejingji') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu3">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h227') }}"><img decoding="async" class="img-fluid" src="static/picture/5592929550b638ea3dd46613ad4de925.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h227') }}">“中国式现代化”需要牢固树立黄河文化意识</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>党的二十大对推动全面建设社会主义现代化高质量发展作出了战略部署。黄河流域的高质量发展，也是“中国式现代化”的主要构成和任务目标。其政治、经济、文化的逻辑起点和内生动力，都需要我们用“四个自信”给予讲清楚。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-05 08:52</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">点击加载更多</a></div>
+    						</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu4">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h169') }}"><img decoding="async" class="img-fluid" src="static/picture/9bbd9c8396c1c9a0e675399d3c7a2e83.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h169') }}">《中华人民共和国黄河保护法》正式施行</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>4月1日起，《中华人民共和国黄河保护法》正式施行。黄河保护法是中国第二部流域法律，于2022年10月30日经全国人大常委会会议表决通过。此前，中国第一部流域法律——长江保护法已于2021年3月1日起施行。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-05-09 20:29</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h161') }}"><img decoding="async" class="img-fluid" src="static/picture/37cb0ab275bfc416816f39d2c5a6be10.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h161') }}">通过工程和生物措施，阿坝推进黄河流域生态保护治理—— 筑好绿色“长城” 守护一河碧水</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>在阿坝州若尔盖县唐克镇，黄河在若尔盖大草原“美丽回眸”，勾勒出黄河九曲第一湾。看日出、云海、黄河美景，这里每年都吸引着不少游客前来。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-10-15 17:46</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h155') }}"><img decoding="async" class="img-fluid" src="static/picture/82cb6b70e6f1b0864cc55954e1a56305.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h155') }}">黄河安澜丨调水治沙飞鸟落 小浪底：治黄的关键工程</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>万里黄河，纳百川浩瀚。黄河是中华民族的母亲河、生命河，也是一条桀骜难驯的忧患之河。黄河径流泥沙含量世界居首，大量泥沙淤积在下游河床上，形成地上悬河，每当汛期来临或突发洪水，极易决溢改道。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-09-16 00:42</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h164') }}"><img decoding="async" class="img-fluid" src="static/picture/d9ed1d8c8b9a3faf7de04eb3a8a00eb4.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h164') }}">黄土 黄河 黄帝：黄河流域生态文明与历史文化展览</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>2022年7月15日，在陕西历史博物馆第七展厅，以“黄土 黄河 黄帝”为主题的黄河流域生态文明与历史文化展览开幕。这里汇集了陕西省、青海省、四川省、甘肃省、山西省、河南省、山东省、内蒙古自治区、宁夏自治区等13家博物馆的180多件珍贵文物和相关展品——</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-07-25 11:47</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h162') }}"><img decoding="async" class="img-fluid" src="static/picture/f5e5d553e8e9a42f633d999ba94bc182.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h162') }}">总投资5.32亿元 陕西坚持项目引领抓好黄河流域生态保护修复工作</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>4月26日上午，陕西省人民政府新闻办公室举办新闻发布会，会上，陕西省自然资源厅国土空间生态修复处负责人魏宏安，就陕西省在推动黄河流域生态保护修复方面的工作和成效，做了详细介绍。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-04-26 17:56</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h168') }}"><img decoding="async" class="img-fluid" src="static/picture/e78ff66f2c89efa5ff664faf450e3612.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h168') }}">黄河流域“清废行动”清理各类固废近900万吨</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>记者从生态环境部30日召开的例行新闻发布会获悉：2021年黄河流域“清废行动”应用卫星和无人机遥感技术，</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-03-31 08:21</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h167') }}"><img decoding="async" class="img-fluid" src="static/picture/2f53062783b833cf489c9ec15ac962d6.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h167') }}">黄河源头18年再没有发生断流现象</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>3月22日至28日是第三十五届“中国水周”，主题为“推进地下水超采综合治理 复苏河湖生态环境”。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-03-29 09:06</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h166') }}"><img decoding="async" class="img-fluid" src="static/picture/f8d1d8abc9343deeaf4afaef59be9cf8.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h166') }}">“黄河流域湿地保护战略与优先行动”项目指导委员会第一次会议在京召开</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>3月16日上午，由保尔森基金会、内蒙古老牛慈善基金会和中国科学院地理科学与资源研究所联合主办的“黄河流域湿地保护战略与优先行动”项目指导委员会第一次会议在京召开。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-03-21 08:47</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h153') }}"><img decoding="async" class="img-fluid" src="static/picture/c276570330e33995ccec99da8305f7f6.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h153') }}">全面提升黄河流域大保护和大治理能力</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>推进黄河流域生态保护和高质量发展重大国家战略，对于实现“两个一百年”奋斗目标、实现中华民族伟大复兴具有重要意义。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-11-02 09:17</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h163') }}"><img decoding="async" class="img-fluid" src="static/picture/0cb5e69422ac9507d13cd334d94c72c6.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h163') }}">厚植生态底色，绘就黄河流域生态保护和高质量发展滨州画卷</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>央广网滨州9月26日消息(记者王成林 滨州台记者邹朝阳)滨州市深入落实黄河流域生态保护和高质量发展战略，统筹黄河河道、岸线和滩区生态建设，建设黄河绿色生态走廊，加快绘就黄河流域生态保护和高质量发展的滨州画卷。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-09-26 20:42</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h154') }}"><img decoding="async" class="img-fluid" src="static/picture/8e44e26de18d791549f4316c8fc255bd.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h154') }}">163名“生态警长”守护黄河入海口</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>“湿地茫茫，芦荻苍苍。鹳鹤伴舞，鸥鹭集翔。”黄河三角洲国家级自然保护区野生动植物资源丰富，是濒危珍稀鸟类迁徙的中转站和繁殖地，然而这也成为不法分子谋求暴利的对象。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-04-30 11:08</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h165') }}"><img decoding="async" class="img-fluid" src="static/picture/31ad305dde04cdc66b260a0954f0df36.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h165') }}">擦亮黄河文化的生态底色</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>在内容丰富的黄河文化中，生态文明是一以贯之的亮丽底色，沿黄地区古代先民的水利开发、农业生产皆围绕“人与自然和谐共生”这一时代主题而展开。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2020-12-01 18:24</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('shengtaihuanbao') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu5">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h186') }}"><img decoding="async" class="img-fluid" src="static/picture/e6457f0aca1d1d7bb0ace59315455647.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h186') }}">北斗卫星家族添新成员 陕西力量助卫星导航“升级”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>中新网西安5月17日电 (杨英琦 张一辰)17日，北斗卫星导航系统第五十六颗卫星成功发射。航天科技集团五院西安分院(以下简称：西安分院)承担了该卫星导航分系统、天线分系统、转发分系统、星间链路子系统等全部有效载荷以及部分测控单机的研制任务。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-05-18 10:13</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h181') }}"><img decoding="async" class="img-fluid" src="static/picture/adea1b58d800308b5a7b10dae95ba8f9.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h181') }}">2023年陕西省学生资助工作会议召开</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>2023年5月6日，陕西省学生资助工作会议在西安召开，省委教育工委委员、省教育厅副厅长王海波出席会议并讲话。省教育厅、省财政厅、国家开发银行陕西省分行等相关负责人出席会议。会议由省委教育工委、省教育厅二级巡视员杨盛涛主持，西北政法大学校长范九利致辞。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-05-08 09:37</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h178') }}"><img decoding="async" class="img-fluid" src="static/picture/12e2c6ee8f1253628ed686cd31f76fa5.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h178') }}">西安首届民办教育展暨第四届国际教育创新论坛</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>“教育展挺接地气的，有我想要咨询和了解的学校。通过参加教育展，让我对民办学校有了一定的了解。”全程参加西安首届民办教育展暨第四届国际教育创新论坛的西安市未央区先锋小学六年级学生何易霏的妈妈王女士说。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-24 10:30</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h180') }}"><img decoding="async" class="img-fluid" src="static/picture/058c30e190fa308c562ab3bfe6e24312.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h180') }}">桃花园里“上课” 大自然中“学习”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>为落实“双减”政策，推进“五育并举”，提升学生的综合知识水平和实践能力，近日，鄠邑区北街小学以柳泉村桃花为契机开展了秦腔为主题的综合实践活动。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-11 11:20</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h177') }}"><img decoding="async" class="img-fluid" src="static/picture/7bcbc365aeb9ee8dc331c8987aa2543e.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h177') }}">陕西省规范民办义务教育发展工作推进会召开</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>2022年5月31日下午,陕西省规范民办义务教育发展工作领导小组召开规范民办义务教育发展工作推进会。省规范民办义务教育发展工作领导小组副组长、省委教育工委书记王建利出席会议并讲话。省教育厅副厅长赵昶葆通报全省工作进展情况和存在问题。西安、咸阳、渭南、延安等4个市汇报工作情况，全体参会人员就重点工作进行交流讨论。会议由省规范民办义务教育发展小组办公室主任、省教育厅副厅长高岭主持。 </small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-06-02 10:30</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h185') }}"><img decoding="async" class="img-fluid" src="static/picture/1b289d72ef630c0956651a8deb1a4517.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h185') }}">新华社：我国本土葡萄酒酵母完成“从0到1”的突破</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>新华社西安5月27日电（姚友明、李晓春）记者27日从西北农林科技大学获悉，由西北农林科技大学葡萄酒学院刘延琳教授团队培育的两株本土葡萄酒酵母实现我国本土葡萄酒酵母“从0到1”的突破，解决了我国葡萄酒酵母长期以来存在的“卡脖子”技术隐患与产业风险，为我国葡萄酒产业的“微生物种业”安全提供了技术保障。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-05-26 12:12</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h184') }}"><img decoding="async" class="img-fluid" src="static/picture/b6c4d803a79acc4babe511e77a1c740d.jpeg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h184') }}">科技日报：新一代人工晶状体研究成果 获ASCRS发布</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>科技日报讯（记者史俊斌）享誉全球眼科学术界的“2022美国白内障和屈光外科学会（ASCRS）大会”近日在美国华盛顿举行，西安高新区入驻企业——西安眼得乐医疗科技有限公司在会上连续发布了3篇关于全新一代生物材料“交联聚烯烃”人工晶状体的研究成果。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-05-25 12:05</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h179') }}"><img decoding="async" class="img-fluid" src="static/picture/b830643a0acf05bddc9acaf6b3dfbf34.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h179') }}">西安外国语大学“六个聚焦”助推乡村振兴</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>西安外国语大学以巩固拓展脱贫攻坚成果同乡村振兴有效衔接为目标，立足工作实际，聚力推进、提质增效，以“六个聚焦”，开展结对帮扶助推乡村振兴。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-03-28 08:54</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h183') }}"><img decoding="async" class="img-fluid" src="static/picture/f605698c3f8054bbba5f953ec39ed0df.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h183') }}">陕西杨凌：为“秦创原”注入农科“芯片”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>10月22日至26日，秦创原创新驱动平台展作为今年农高会上新增加的展览展示内容之一，通过展板、实物等形式展示了秦创原创新驱动平台的特点与内涵、秦创原农业板块的建设内容、杨凌涉农企业在成果转化方面的实例，以及杨凌加速产业链创新链深入融合、科技创新和产业推广方面开展的工作。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-10-28 16:20</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h182') }}"><img decoding="async" class="img-fluid" src="static/picture/796b67368cfff64f05d37dab9d086d58.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h182') }}">“检阅”玉米新品种，打好种业“翻身仗”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>为解决种业发展“卡脖子”问题，坚决打好种业翻身仗。2021年9月22—25日，我省举办了玉米新品种示范展示和观摩活动。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-09-27 14:53</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h172') }}"><img decoding="async" class="img-fluid" src="static/picture/add28826569933dfdbfd518a1b867dd7.jpeg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h172') }}">让职业教育成为人才振兴“新引擎”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>近日，习近平总书记对职业教育工作作出重要指示强调，在全面建设社会主义现代化国家新征程中，职业教育前途广阔、大有可为。要坚持党的领导，坚持正确办学方向，坚持立德树人，优化职业教育类型定位，深化产教融合、校企合作，深入推进育人方式、办学模式、管理体制、保障机制改革，稳步发展职业本科教育，建设一批高水平职业院校和专业，推动职普融通，增强职业教育适应性，加快构建现代职业教育体系，培养更多高素质技术技能人才、能工巧匠、大国工匠。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-04-22 09:07</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h176') }}"><img decoding="async" class="img-fluid" src="static/picture/7030399f5e8a873bcad1aa2dc15bdf7c.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h176') }}">陕西省民办教育系统学习贯彻党的十九届五中全会精神</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>2020年12月16日下午，陕西省民办教育系统学习贯彻党的十九届五中全会精神暨陕西省民办教育协会2020年年会在西安召开。省委教育工委、省教育厅一级巡视员朱征南出席并讲话。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2020-12-18 14:57</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('kejijiaoyu') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu6">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h237') }}"><img decoding="async" class="img-fluid" src="static/picture/6bea343449aaadef700915d74b877c56.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h237') }}">黄河主题旅游海外推广季｜“看九曲黄河 听华夏故事”主题展——造中华文脉篇</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河流经青海、四川、甘肃、宁夏、内蒙古、陕西、山西、河南、山东中国九省、区，千百年来，黄河奔腾向前，不舍昼夜，哺育着中华民族，孕育了中华文明。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-08-14 13:02</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h137') }}"><img decoding="async" class="img-fluid" src="static/picture/cec99a954b1a982e75a4bc58a16e9e3f.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h137') }}">第二十八届三门峡黄河文化旅游节开幕</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>新华网郑州5月20日电（范作言）黄河之滨襄盛会，崤函焕彩迎客来。5月19日晚，2023“中国旅游日”河南主会场启动仪式、第二十八届三门峡黄河文化旅游节·第九届中国特色商品博览交易会开幕式、“圣地仰韶·花开中国”文艺演出在三门峡国际文博城举行。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-05-21 16:24</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h136') }}"><img decoding="async" class="img-fluid" src="static/picture/3bc6d22611614cba0d7fac005ecf31ae.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h136') }}">“相约黄河畔，畅游三门峡” 第二十八届三门峡黄河文化旅游节·第九届 中国特色商品博览交易会即将举办</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>2023年5月6日下午，河南省政府新闻办召开第28届三门峡黄河文化旅游节·第9届特色商品博览交易会新闻发布会，介绍和解读第28届三门峡黄河文化旅游节·第9届特色商品博览交易会的相关情况。中共三门峡市委副书记、市人民政府市长徐相锋，河南省文化和旅游厅党组成员、副厅长周耀霞，省商务厅二级巡视员费全发，河南省体育局群众体育处处长孙甜甜，中共三门峡市委副书记、组织部部长吴海燕参加了新闻发布会，河南省委宣传部副部长、省政府新闻办主任平萍主持发布会。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-05-08 16:22</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h130') }}"><img decoding="async" class="img-fluid" src="static/picture/288cd5ae0e355be27ca3bb62d5dabf87.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h130') }}">青岛实验高中开展“黄河之约”研学，900多名师生跨越1800余公里——在行进中涵养学生“大我”情怀</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>滚滚黄河万年长，绵绵华夏文明始。黄河流域是中华文明起源和发展的核心地区，黄河文化凝聚着中华优秀传统文化的核心要素。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-24 16:03</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h222') }}"><img decoding="async" class="img-fluid" src="static/picture/0b6e8fb9b20195c5eb867c25849e1856.jpeg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h222') }}">郑州三门峡携手打造精品黄河文化旅游带</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>2023年3月21日，三门峡文化旅游（郑州）推介会举行。省文化和旅游厅副厅长周耀霞，三门峡市委常委、宣传部长、副市长吴海燕，郑州市副市长陈红民出席推介会。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-03-22 09:16</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h220') }}"><img decoding="async" class="img-fluid" src="static/picture/818dd3dfa66bcbc62bd73ec847edced6.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h220') }}">邵丽代表：讲好“黄河故事” 全域打造黄河文化旅游带</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>人民网郑州3月12日电(记者王玉兴)“黄河是我们的母亲河，黄河文化内涵十分丰富，不仅包含了民为邦本、天人合一的传统思想，更涵盖了海纳百川、兼容并包、和谐共生、开放创新的时代理念与民族精神。”</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-03-12 08:20</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h132') }}"><img decoding="async" class="img-fluid" src="static/picture/7cd7fa6097deed9bc762f31b9e783767.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h132') }}">看黄河有哪些景点 黄河好玩的景区景点</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河源头之一卡日曲是以五个泉眼开始的，另一个源头是玛曲，仅有一个泉眼。这是黄河的源头地区，旅游者在这里根本无法想像黄河之宗竟不是滔滔洪水，而是一股股细微的清泉和一片有许多砂砾野草的温林荒滩。黄河源头风光宜人，水草丰美，湖泊，小溪星罗棋布，甚为壮观。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-02-10 16:11</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h225') }}"><img decoding="async" class="img-fluid" src="static/picture/9904dd3ab046077e5f24c21ce9b7d40e.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h225') }}">第四次黄河文化暨十字型黄河文化旅游带研讨会 在西安成功召开</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>陕西省黄河文化经济发展研究会于2022年12月8日在西安成功召开了第四次黄河文化暨“十字型”黄河文旅游带研讨会。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-12-09 13:36</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h135') }}"><img decoding="async" class="img-fluid" src="static/picture/2337f9b614fd49908ef9cd92f39eecd8.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h135') }}">沿黄河来旅游！ 跟着这三条“黄河文化”特色主题游线路打卡黄河美景</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>大河网讯（记者 刘杨）将黄河流域河南段富集的文化和旅游资源，转化为游客可亲近、可感知、可体验的文旅产品。12月25日，大河网记者从河南省政府新闻办举行的“春满中原 老家河南”主题系列活动新闻发布会上获悉，为了推进黄河文化遗产的系统保护，深入挖掘黄河文化蕴含的时代价值，讲好“黄河故事”，延续历史文脉，坚定文化自信，河南省文化和旅游厅挖掘整理了“黄河文化”三条特色主题游。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-12-05 16:19</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h125') }}"><img decoding="async" class="img-fluid" src="static/picture/a0fb6e6499444d0ff3d3ce9104ab30d1.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h125') }}">10条文化旅游线路带您发现黄河之美</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>11月11日，山东省文化和旅游厅发布10条黄河文化主题旅游线路，带您探寻黄河文脉、感受诗意栖居、品鉴黄河美食、发现黄河之美，快看看淄博都有哪些地方上榜了吧！</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-11-14 15:41</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h134') }}"><img decoding="async" class="img-fluid" src="static/picture/ff6b80d8f98f9cf902d96e7aaf011da8.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h134') }}">山东发布10条黄河文化主题旅游线路</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河在山东，流经九市，蜿蜒千里，哺育齐鲁儿女，润泽山东大地。10条黄河文化主题旅游线路带您探寻黄河文脉、感受诗意栖居、品鉴黄河美食、发现黄河之美。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-11-11 16:13</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h219') }}"><img decoding="async" class="img-fluid" src="static/picture/8e1d9030ab51932473f0827da3ad1273.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h219') }}">滨州：打造具有国际影响力的黄河文化旅游带</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>深秋时节，滨州黄河小街湾景区游人如潮，游客漫步在美景中，或伫立岸边凭栏远眺，尽览与黄河遥相呼应的壮阔气象；每逢假期，气势恢宏的黄鹤楼更加热闹，游人三五成群来此观光旅游，品读着黄河文化及其依水而建、缘水而兴、因水而美的城市故事.....</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-11-03 16:53</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('huanghelvyou') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu7">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h146') }}"><img decoding="async" class="img-fluid" src="static/picture/751053ec11c74f1ffcdc21225a77f7a6.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h146') }}">闪电评论丨赶“黄河大集”，品“山东味道”，悟“千年古韵”</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>4月18日上午，由中国社会科学院、中国公共关系协会、山东省人民政府共同主办的黄河文化论坛在东营市开幕。作为黄河文化论坛的配套活动，2023山东省春季黄河大集也已于4月17日开集。品美食、买手造、看展演、逛美景……一个大集上，就能逛遍九曲黄河沿岸特色美食、非遗、民俗。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-19 16:56</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h145') }}"><img decoding="async" class="img-fluid" src="static/picture/bddcac4f2b7d68d150c0a14e5d3d79db.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h145') }}">舌尖上的黄河来了！逛黄河大集，品黄河美食</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>赶春季黄河大集，采一年美好希望。4月17日下午，2023山东省春季黄河大集启动暨清风湖夜市开市仪式在东营举行。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-18 16:53</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h143') }}"><img decoding="async" class="img-fluid" src="static/picture/61d461ddb53142afae5581fec7810f8f.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h143') }}">沿黄九省区美食齐聚黄河大集，一碗疙瘩汤“杀”出重围！ </a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>对于很多人来说，赶大集是灵魂深处最深的印记。4月18日至19日，黄河文化论坛在山东东营举办。作为黄河文化论坛的配套活动，2023山东省春季黄河大集热热闹闹开集了！</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-18 16:47</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h156') }}"><img decoding="async" class="img-fluid" src="static/picture/785fbecd4e2f07e6e73951e14ff5661d.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h156') }}">​第三届吴忠早茶美食文化节中国黄河流域美食大联展筹备工作有序推进 </a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>日前，由市市场监管局牵头负责的第三届吴忠早茶美食文化节中国黄河流域美食大联展已完成招商任务，全面进入布展阶段，各项筹备工作顺利推进。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-14 17:30</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h150') }}"><img decoding="async" class="img-fluid" src="static/picture/83d1f174bf08d5335288f9c949ec0959.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h150') }}">沿着黄河遇见美食｜这些美食，哪些来自你的家乡？</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河在山东，奔腾628公里直入大海，直接滋养菏泽、济宁、泰安、聊城、济南、德州、滨州、淄博、东营九地市，惠泽两岸。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-04-11 17:04</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h157') }}"><img decoding="async" class="img-fluid" src="static/picture/1b6eb8bebf98446c1970e2d2777a1263.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h157') }}">我在包头等你  黄河文化旅游美食季暨首届开河鱼节启幕</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>本次活动由19项大型活动、99场小型活动构成，活动将持续2个月。通过开展一系列活动，将充分挖掘黄河文化、农家文化体验等文旅资源，把文旅产业做优做活，尽快把包头名气打出去，把包头人气聚上来，将黄河开河鱼节打造成包头春季旅游品牌，推动我市文化旅游及餐饮业健康发展</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-03-20 17:32</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h151') }}"><img decoding="async" class="img-fluid" src="static/picture/498109e2857ad54197e2768b67b17ddc.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h151') }}">接住！来自黄河流域的鲜嫩暴击，这块战斧羊排香到流口水！</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>想吃羊排吗？从小食百草、饮井水养在黄河流域的那种  </small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-11-19 17:07</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h148') }}"><img decoding="async" class="img-fluid" src="static/picture/ba1efdab08309ca799476632ec6c2e32.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h148') }}">沿着黄河吃美食 这些特色美食值得一试~</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>谢集罐子汤，原料全部采用鲁西南特有的散养青白山羊，该汤主要用羊骨、羊头肉、羊肝、羊心、羊肚等原料长时间熬汤制作，多用花椒、生姜为佐料，放入优质粉条，香气袭人，入口爽滑，久喝不腻。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-11-15 17:02</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h158') }}"><img decoding="async" class="img-fluid" src="static/picture/b59e72057abf5fc379c81effa845ee14.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h158') }}">打卡沿黄美食、飞跃壶口瀑布，来博览会领略九曲黄河古今风情</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河落天走东海，万里写入胸怀间。自西向东，在黄河流经的9个省（区）土地上，一场关于黄河文旅协同发展的新画卷正在第二届中国国际文化旅游博览会徐徐展开。9月17 日，博览会沿黄文旅展区持续为市民呈现着九曲黄河的古今风情。较去年不同的是，本届展区汇集了青海牦牛肉干、甘肃兰州拉面、山东“盘丝饼”等众多特产美食，市民们可以在现场一边打卡美食，一边“沉浸式”体验黄河的波涛汹涌，尽览九曲黄河的风情画卷。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-09-17 17:34</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h144') }}"><img decoding="async" class="img-fluid" src="static/picture/d6f42202c1e8bbf9e9b85eda3f17c145.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h144') }}">黄河文化月|打卡“沿黄九省市”美食，你最爱的家乡美食是什么？</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>　4月6日，一场关于美食的battle赛在网络上悄然兴起。正观新闻记者注意到，这不仅是河南、青海、四川等“沿黄九省市”的一次PK，更是“沿黄”区域间的一场美食接力赛，还是“沿黄九省市”的一次联动。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-04-07 16:48</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h147') }}"><img decoding="async" class="img-fluid" src="static/picture/7a5e1d2a7f77420f6118d81160f09235.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h147') }}">走遍黄河两岸，各色美食让人欲罢不能，一天吃五顿饭都不嫌多</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>5464公里的黄河从青藏高原缓缓而来，一路穿山越岭，滋润了广袤的土地，创造出独具特色的黄河文化，同时也创造了拥有黄河特色的饮食文化、饮食习俗。在这5464公里的黄河沿岸，究竟有哪些美食不容错过呢？</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-03-24 16:59</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h152') }}"><img decoding="async" class="img-fluid" src="static/picture/02d1213bcd1e64982b3a9278a2528990.png"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h152') }}">黄河孕育的美食，你吃过几种？</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>黄河是华夏文明的起源地之一，它的黄河水灌溉着农田，也养育着很多属于它的物种。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2018-09-09 17:12</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('huanghemeishi') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu8">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>近年来，杂粮产业在全球范围内迅速兴起。随着人们对健康饮食的重视以及对传统食物的回归，杂粮作为一种营养丰富的粮食选择，越来越受到人们的关注和喜爱。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2023-05-24 17:11</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>如果吃一份“热狗”失去36分钟的健康生命，而吃一份坚果获得26分钟的健康生命。你会如何选择饮食？</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-11-19 08:10</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>一、秋季运动有哪些注意事项  先从户外运动说起，秋天在给了我们最好的运动条件的同时也在考验我们的细心，我不得不这样说，因为以前每当训练过后女朋友拿着长袖外套，再那里等着你，然后给你穿上的时候你是会很感动的，</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-10-31 16:41</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>晚餐要吃得清淡、摄入优质蛋白、聚会相约“吃草”，合理膳食成为当代人制定食谱的重要标准；早睡早起不熬夜，年轻人更注重养生，努力摆脱“亚健康”状态；一波波运动“时尚”兴起，保持体育锻炼成为健康生活的“必修课”……</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-10-13 12:45</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h189') }}"><img decoding="async" class="img-fluid" src="static/picture/303fd192788893b27de8a85515b42527.gif"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h189') }}">头晕眼花日常要经常吃什么头晕眼花的按摩缓解方法</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>一、头晕眼花与哪些疾病有关    贫血     如果不注意营养保健，很容易患贫血。此外，消化不良，消化性溃疡，消化道出血以及慢性炎症疾病的患者均可继发贫血。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-08-11 08:54</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h188') }}"><img decoding="async" class="img-fluid" src="static/picture/195b4076d1aec4c9ec5e22340a5a37a8.gif"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h188') }}">人体内脏的休息时间是什么时候人体内脏的调理方法</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>一、人体内脏的休息时间  凌晨1——3时：这是肝最强的时间，我们能做的就是睡眠，给肝创造一个良好的工作环境。肝最弱的时间是13——17时。所以建议把辛苦工作尽量堆在上午。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2021-08-06 12:02</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h191') }}"><img decoding="async" class="img-fluid" src="static/picture/a764fd83bd408826962c4b9dfe7856dc.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h191') }}">《长安十二时辰》背后的吃历史：唐朝兴起的中国第四次饮食革命</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>《长安十二时辰》这部剧，在内容上还原了不少历史细节。尤其是唐朝饮食文化的一些东西，让很多观众津津乐道，其中包括胡饼、羊肉、水晶柿子等等。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2019-09-29 11:35</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h195') }}"><img decoding="async" class="img-fluid" src="static/picture/6d3e758fda6bf69d25f5afc9dfe6e8b1.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h195') }}">强四力 走基层: 山东生物海瓷餐具引领健康革命</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>齐鲁网滨州9月5日讯 9月4日，“强四力 走基层”2019·滨州网媒海疆行活动走进山东海瓷文化股份有限公司，领略海洋文化与瓷器艺术相结合的魅力。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2019-09-05 08:49</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h187') }}"><img decoding="async" class="img-fluid" src="static/picture/fd308482afa0b6014b161598f25ccdb9.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h187') }}">一碗白米引燃的饮食革命</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>“这是最好的时代，也是最坏的时代。”在时代发展的需要中，企业如何跟随政策导向进行自身发展？中国正处于经济转型升级，正在从中国制造向中国创造转变、从中国产品向中国品牌转变、从中国速度向中国质量转变，消费的力量已见端倪，健康饮食越来越受到消费者认可，越来越得到国家政策的支持。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2019-08-13 17:31</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('huanghemeishi') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+					<div class="tab-pane fade" id="menu9">
+						<ul class="list-group list-group-flush">
+							<div class="row">
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h211') }}"><img decoding="async" class="img-fluid" src="static/picture/a7728bc1fc09932eb5aa5b601c811512.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>夏历正月十五为“元宵节”。亦称“元夕节”，因此节为一年中第一个月圆之夜，夜又别称“宵”，故名。道教兴起后，又称之为“上元节”。该节的活动主要是展示灯火，民间又称之为“灯节”。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2022-05-25 19:44</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h210') }}"><img decoding="async" class="img-fluid" src="static/picture/0f224c049afc5da1b439597e24a438e6.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>九曲黄河，浩荡如歌,以其百折不挠的磅礴气势塑造了中华民族自强不息的民族品格。习近平总书记曾指出：“黄河文化是中华文明的重要组成部分，是中华民族的根和魂。”并强调“要深入挖掘黄河文化蕴含的时代价值，讲好‘黄河故事’，延续历史文脉，坚定文化自信。”</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2019-01-27 11:20</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h208') }}"><img decoding="async" class="img-fluid" src="static/picture/574c4f2d46d09ac4a62d3e4999ca7024.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>才乘一线凭风去，纸鸢跋扈挟风鸣。4月13日，潼关县岳渎景区春暖花开，风和日丽，陕西省第一届全民健身运动会暨2017中国·渭南黄河金三角协作区（陕西·潼关）首届风筝大赛试飞成功，来自陕西省风筝专项委员会的20余名会员放飞多种特色风筝近50只，充分展示了风筝文化与放飞竞技水平。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2017-04-14 15:01</small>
+    									</div>
+									</div>
+								</div>
+    															<div class="col-12 mt-3">
+								    <div class="row no-gutters">
+    									<div class="tabs_img col-4"><a href="{{ url_for('h209') }}"><img decoding="async" class="img-fluid" src="static/picture/d797b72df508e34c54b74bbaece61954.jpg"></a></div>
+    									<div class="tabs_class my-2 d-none d-sm-block">黄河文化</div>
+    									<hr class="hr d-none d-sm-block" size="30">
+    									<div class="tabs_title ls3 mb-1 col-8 pl-3">
+    										<a href="{{ url_for('h209') }}">首届洛川朱牛农民文化艺术节暨建设礼仪活动启动</a>
+    										
+    									</div>
+    									<div class="tabs_desc ls2 d-none d-sm-block">
+    										<small>11月12日，朱牛便民服务中心首届农民文化艺术节暨建设礼仪朱牛启动仪式在该中心文化广场举行。县委常委、宣传部长石兴平、副县长王建斌和相关部门负责人以及来自各村的500多名群众参加了活动。</small>
+    									</div>
+    									<div class="tabs_desc float-right my-1 d-none d-sm-block">
+    										<small>发表于 2015-11-16 16:45</small>
+    									</div>
+									</div>
+								</div>
+    							    							<div class="col-md-12 tabs_more my-5 text-center"><a href="{{ url_for('huanghemeishi') }}">点击加载更多</a></div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>				
+
+	<!--ad2--> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">	
+				
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/1387f05939ae227aa2c0b5838ef36c55.jpg"></a>
+					
+					
+					
+							</div>
+		</div>
+	</div>
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  	<a href="https://smalltool.github.io/" style="display:none;">网页批量下载器</a>
+</body>
+</html>

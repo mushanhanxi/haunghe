@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>组织结构 - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}" class="active">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-12">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						组织结构					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="{{ url_for('huangyanhuigaikuang') }}" class="">研究会简介</a></div>
+												<div><a href="" class="nei_active">组织结构</a></div>
+												<div><a href="{{ url_for('yanjiuhuizhangcheng') }}" class="">研究会章程</a></div>
+												<div><a href="{{ url_for('lianxiwomen') }}" class="">联系我们</a></div>
+											</div>
+				
+					
+					<div class="col-xs-12">
+						　　<div style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:18px;line-height:2.5;"><strong>陕西省黄河文化经济发展研究会组织结构</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;陕西省黄河文化经济发展研究会的行政组织机构包括会员代表大会、理事会、常务理事会、顾问委员会、会长办公会、秘书处和各委员会或专业委员会。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;一、会员代表大会</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;本会最高权力机构是会员代表大会，由理事会组织召开，其他机构均由会员代表大会决定产生并对其负责，会员代表大会的职权是：</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（一）制定和修改章程；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（二）制定和修改理事、常务理事、负责人产生办法，报陕西省社会科学界联合会备案；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（三）选举理事会成员，审议决定顾问委员会成员。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（四）审议理事会的工作报告和本会发展战略规划；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（五）审议理事会财务决算报告及预算报告；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（六）审议会费收缴标准及办法；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（七）</span><span style="white-space:pre;"> </span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">决定终止事宜；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（八）</span><span style="white-space:pre;"> </span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">决定其他重大事宜。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;二、</strong></span><span style="white-space:pre;"> </span><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>理事会</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;理事会是会员代表大会的执行机构，在闭会期间领导本团体开展日常工作，对会员代表大会负责。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;理事会的职权是：</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（一）执行会员代表大会的决议；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（二）选举和罢免会长、副会长、秘书长，根据会长提名决定常务副会长。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（三）筹备或授权常务理事会召开会员代表大会；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（四）向会员代表大会报告工作和财务状况，审查本会年度工作报告、年度财务决算报告及年度预算；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（五）决定会员的吸收或除名；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（六）决定设立办事机构、分支机构、代表机构和实体机构；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（七）决定副秘书长、各机构主要负责人的聘任；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（八）领导本团体各机构开展工作；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（九）制定内部管理制度；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（十）决定其他重大事项。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;三、常务理事会</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;本会设常务理事会，常务理事会是理事会的执行机构，常务理事会由理事会选举产生。在理事会闭会期间常务理事会领导本会开展日常工作，行使第十九条第一、三、五、六、七、八、九项的职权，对理事会负责。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;四、会长办公会</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;会长办公会的职权：</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（一）执行会员代表大会、理事会、常务理事会的决议；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（二）筹备召开会员代表大会、理事会、常务理事会；</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;（三）研究讨论本会日常重要工作，涉及理事会或常务理事会职权的事项，提请理事会或常务理事会表决。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;五、名誉会长和顾问委员会</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;本会根据工作需要设立名誉会长和顾问委员会。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;名誉会长和顾问由德高望重、热心黄河文化经济发展的离退休领导干部和有名望的专家学者担任。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;顾问委员会设主任1名，副主任2—3名，各专业领域委员若干名。顾问委员会拥有本会的决策建议权，可就本会发展战略、专业运营及相关专门问题的进行研究，拥有对理事委员会和会长办公会日常工作的批评建议权。本会顾问委员会成员为本会个人会员，如果还不是本会会员的顾问委员会成员由秘书处统一办理相关入会手续。可根据工作需要设顾问委员会办公室，负责顾问委员会工作的组织协调及其服务工作，其业务工作由秘书处统筹组织实施。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;六、秘书处</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;本会设立秘书处，为本会常务办事机构。秘书处由秘书长、执行秘书长、副秘书长及常务工作人员组成，由秘书长主持秘书处日常工作。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;秘书处及下辖机构负责人为专职，按照国家有关政策决定其聘任情况。</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><strong>&emsp;&emsp;七、各委员会或专业委员会</strong></span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;1.黄河智库委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;2.教育咨询委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;3.旅游与饮食文化委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;4.优秀传统文化传承专业委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;5.老子文化研究专业委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;6.红色文化传承专业委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;7.乡村发展分会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;8.数字专业委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;9.职业安全节能环保专业委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;10.黄河书画专业委员会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;11.自动化应用分会</span></div><div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;12.中医药专业委员会</span></div><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;">&emsp;&emsp;13.国际交流部</span></p><p><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;line-height:2.5;"><br></span></p>					</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">	
+				
+									<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+							</div>
+		</div>
+	</div>
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

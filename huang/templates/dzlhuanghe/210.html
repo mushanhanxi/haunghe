@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="九曲黄河，浩荡如歌,以其百折不挠的磅礴气势塑造了中华民族自强不息的民族品格。习近平总书记曾指出：&ldquo;黄河文化是中华文明的重要组成部分，是中华民族的根和魂。&rdquo;并强调&ldquo;要深入挖掘黄河文化蕴含的时代价值，讲好&lsquo;黄河故事&rsquo;，延续历史文脉，坚定文化自信。&rdquo;">
+    <title>五谷丰登幸福年&mdash;&mdash;山东黄河流域的过年习俗 - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}" class="active">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						流域民俗					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="" class="">黄河流域民族概况</a></div>
+												<div><a href="" class="nei_active">流域民俗</a></div>
+												<div><a href="" class="">流域节庆</a></div>
+												<div><a href="" class="">民俗产品</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>五谷丰登幸福年——山东黄河流域的过年习俗</h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2019-01-27<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;九曲黄河，浩荡如歌,以其百折不挠的磅礴气势塑造了中华民族自强不息的民族品格。习近平总书记曾指出：“黄河文化是中华文明的重要组成部分，是中华民族的根和魂。”并强调“要深入挖掘黄河文化蕴含的时代价值，讲好‘黄河故事’，延续历史文脉，坚定文化自信。”</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;滔滔黄河水，悠悠齐鲁情。它所流经之处，无不积淀下深厚的历史、孕育出灿烂的文化。黄河，它在山东境内流经菏泽、济宁、泰安、聊城、济南、德州、滨州、淄博、东营9市，最后由东营汇入渤海，像一部鸿篇巨制徐徐打开，娓娓讲述着发生在这片土地上的故事。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;为大力弘扬“团结、务实、开拓、拼搏、奉献”的黄河精神，本报文化版推出《钩沉·齐鲁大地黄河情》栏目，依托山东省档案馆馆藏档案，讲述黄河流经山东河段积淀下的独特人文风俗，以及发生在齐鲁大地上可歌可泣的动人故事。这其中包括从1946年起山东治黄事业进入人民治黄时代；在反蒋治黄斗争中，解放区人民万众一心，以“三庆安澜”的伟大胜利迎来中华人民共和国的第一缕曙光；新中国成立后，山东人民夺取的一个又一个防汛抗洪胜利……生活在黄河沿岸的齐鲁人民，与河共处、引水兴利，谱写出一曲曲治黄事业的壮丽篇章。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;俗话说：“十里不同风，百里不同俗。”不同的地域，过年的风俗也不尽相同。中国古代以农立国，黄河流域特别是黄河中下游地区担负着“天下粮仓”的重任，过年时，一般都有祈求风调雨顺及防虫减灾等特色民俗活动。山东是儒家文化的发源地，过年时更为注重孝道和礼仪。因此，从大年初一到十五，生活在黄河沿岸的山东人民一直传承延续着祭祀、串亲、祈福丰年、群众自娱等丰富多彩的过年习俗，这些习俗烘托出浓浓的年味。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;旧有祭祀、串亲 新有“拥军拥政”</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;山东是儒家文化的发源地，过年时，黄河流域流传下来很多与祭祀、串亲有关的传统习俗。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;每年大年初一子时，每家每户都会摆好香炉和供品，以供奉神牌灵位、祖辈遗像，并且家中所有人都要穿上新衣服进行祭拜、烧香、放鞭炮等仪式。正月初六日，天刚放亮，黄河边的小伙子们会穿上崭新的黄色“龙衣”，手擎五彩巨龙，在一位长者的引领下来到河边，长者舀出一碗河水洒向龙身，然后除龙首、龙尾外，擎龙的小伙子们全都跪下，恭恭敬敬叩四个头，这个仪式称为“取水”，有乞求黄河安澜、风调雨顺之意；“取水”后的龙灯队伍在回村的路上经过的人家，都要燃放鞭炮以示恭迎。如果某户人家焚烧纸钱、上香跪迎，舞龙的小伙子们还要双膝跪地舞一番，谓之“卧龙迎祥”，直到纸钱烧完方能起身，热闹的仪式背后是老百姓祈望五谷丰登的美好心愿，极具地方特色。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;串亲是当地百姓春节期间又一项重要活动。串亲拜年的顺序各地不一，鲁西北黄河沿岸的风俗是：初二日，至姑祖母、姑家及出嫁不久的姐家、妹家拜年；初三日，拜岳父，俗称“走丈人家”；初四日，至姨家及较远的亲戚家拜年。春节串亲时都要带一些礼物，特别是新婚女婿给岳父的礼物十分讲究，有四色、六色，甚至八色、十色之说。其中，酒、肉、鸡、鱼、糕点、香烟、香肠、罐头都各算一色。串亲时，晚辈要给长辈拜年，长辈会给压岁钱。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;抗战时期，山东革命根据地春节期间有拥军参军的传统。如1944年春节期间，山东分局、山东军区还联合制定出《关于1944年拥军与拥政爱民公约》，确定农历正月十五日为“双拥节”，并把每年的农历一月定为拥军月。结合“双拥”工作，1944年和1945年初，山东抗日根据地各战略区先后开展了两次大规模参军运动,形成了群众性参军热潮，特别是地处黄河流域的广饶县，该县县委、县政府28名县、区级干部带头参军，全县在1945年正月十五日至十七日3天内有3000多名青年报名应征。正值过年期间，新兵临行时披红戴花，村干部和群众敲锣打鼓欢送。此时，各村妇女不分昼夜地给军队做军鞋、手巾等慰劳品，并绣上“抗战光荣”“战斗英雄”等字样表达拥军之情。各村的群众团体、抗属们纷纷写慰问信慰问军队。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;“鞭牛”“嫁枣”祈丰年</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;山东是农业大省，过年时，山东黄河沿岸地区流传下来很多与农业增产丰收有关的民间习俗。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;旧时，济南在立春日有“打春牛”的习俗，即用鞭子来回抽打泥塑的春牛，有劝农之意，祈求来年丰收。正月初一，邹城则有捣鼠洞的特殊习俗，大年初一早晨，人们会用面杖捣鼠洞，边捣边说“戳打戳，戳打戳，十个老鼠九个瞎，还有一个不瞎的，也要叫我戳煞它”，意在保证粮食安全。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;鲁北黄河沿岸，大年初一当天有“嫁枣”的传统，即在日出之时，人们以刀斧敲打枣树树身，认为这样当年的枣子就会获得丰收。这种做法有一定的科学性，春天万物复苏，各种病虫害的虫卵开始孕育，这样反复敲打枣树，能够去除枣树表皮的虫卵，起到保护枣树的作用。在山东聊城《茌平县林业局关于枣树病虫防治情况的汇报》中有记载：1985年春节，全县枣农结合以往的习俗经验，对枣树虫卵进行消杀，林业部门还为枣农制定了科学的防治方法，并针对不同月份的虫情调整方案，取得了良好的效果，涌现出许多高产乡镇、高产村。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;庙会秧歌庆新春</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;春节期间，山东黄河流域会开展丰富多彩的民间庆祝活动，有秧歌、龙灯、狮子舞、跑旱船、武术表演等，场面热闹非凡。</span><br><div style="text-align:center;"><img src="static/picture/b35f2d92681aff76998e743bf27cfc7c.jpg" alt=""></div><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;20世纪七八十年代，山东济南春节民俗串街表演。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;山东省档案馆藏</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;从大年初一开始，山东黄河沿岸很多地区都会有走街串巷的民俗表演。如济南、泰安等地区有民俗串街表演，内容十分丰富。表演时，彩旗彩车开路，高跷、狮子、龙灯、旱船、秧歌队等民俗表演队逐项跟进，每到一个较大的路口或村落，表演者便会集中展示绝活和技艺，群众欢声笑语，掌声不断，场面喜庆而热闹。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;从初二到十六，很多地方都有庙会或灯会。会上，有花鼓、瞎腔等地方戏表演，各种摊贩云集，人们从四面八方赶来，俗称“赶庙会”。鲁西北黄河地区的一些庙会，会在元宵节这天举行“送驾”仪式，“送驾”队伍由8杆彩旗作前导，锣鼓队、高跷、旱船、狮子舞等尾随其后，进入庙宇后，焚香献供，载歌载舞。济南每年举办趵突泉灯会，元宵节当天，天上明月高悬，地上彩灯万盏，花灯种类繁多，争奇斗妍，流光溢彩。人们观花灯、猜灯谜、吃元宵，其乐融融。</span><br><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:14px;line-height:2;">&emsp;&emsp;元宵节期间，黄河流域还会有极负盛名的鼓子秧歌表演。鼓子秧歌是山东“三大秧歌”之首，距今已流传2000多年，它起源于劳作场景，舞姿豪放粗犷，音乐节奏强劲，舞蹈场面宏伟壮观。每年正月十四至十六，滨州惠民全县的鼓子秧歌队都会集结起来进城沿街表演，全县顿时成为秧歌的欢乐海洋。</span><br>                        </div>
+
+                        <section id="ar_fot">
+							                            <h6 class="fr highlight"><span>下一篇：</span><a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a></h6>
+                            <div class="clear"></div>
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>

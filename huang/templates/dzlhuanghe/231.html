@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="">
+    <meta name="description" content="&ldquo;风雨二十年，思未断，梦萦魂牵。父兄情，三生有幸，恩重如山。呕心教诲犹如昨，耳提面命声未远。已十载，独立望西天，难入眠。开国泰，辅民安。遭诬陷，志弥坚。行人间正道，义胆侠肝。">
+    <title>黄河情 | 张志功&mdash;&mdash;在习仲勋身边工作的二十年 - 黄河文化网--陕西省黄河文化经济发展研究会</title>
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	
+  </head>
+  
+  <body>
+	<!--head-->
+	<div class="container my-30 d-none d-sm-block">
+		<div class="row">
+			<div class="col-md-8">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/5d35c5b4293fb3cd799c9fbd549f6029.png" style="width:450px"></a>
+			</div>
+			<div class="col-md-4 align-self-center mt-4">
+				<p class="logo-right">弘扬黄河文化   传播中华文明</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fiuld head_nav d-none d-sm-block">
+		<div class="container">
+			<div class="row">
+		      <div class="col nav_title text-center"><a href="{{ url_for('index') }}">首页</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xinwendongtai') }}">新闻动态</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghewenhua') }}" class="active">黄河文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghejingji') }}">黄河经济</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('shengtaihuanbao') }}">生态环保</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('kejijiaoyu') }}">科技教育</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghelvyou') }}">黄河旅游</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeishi') }}">黄河美食</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('jiankangwenhua') }}">健康文化</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('minsujieqing') }}">民俗节庆</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huanghemeitu') }}">图片视频</a></div>
+						  <div class="col nav_title text-center"><a href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a></div>
+						</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	
+	
+	<!--移动端的导航-->
+	<div class="container my-2 d-block d-sm-none">
+	    <div class="row">
+    		<nav class="navbar navbar-expand-lg navbar-light">
+    		  <!-- <a class="navbar-brand" href="#">首页</a> -->
+    		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+    		  </button>
+    			<div class="container">
+    			<div class="row">
+    		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    			<div class="d-md-flex">
+    				<div class="  col">
+    				<li class="nav-item">
+        				<a class="nav-link " href="{{ url_for('index') }}">首页</a>
+        			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuigaikuang') }}">黄研会概况</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xinwendongtai') }}">新闻动态</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghewenhua') }}">黄河文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghejingji') }}">黄河经济</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('xiandaihuayanjiu') }}">现代化研究</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('shengtaihuanbao') }}">生态环保</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('kejijiaoyu') }}">科技教育</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghelvyou') }}">黄河旅游</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeishi') }}">黄河美食</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('jiankangwenhua') }}">健康文化</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('minsujieqing') }}">民俗节庆</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huanghemeitu') }}">图片视频</a>
+    			  </li>
+    			    			  <li class="nav-item ">
+    				<a class="nav-link " href="{{ url_for('huangyanhuichengyuan') }}">黄研会成员</a>
+    			  </li>
+    			    			  </div>
+    			</div></ul>
+    		  </div>
+    		  </div>
+    		  </div>
+    		</nav>
+        	<div class="logo_wap">
+				<a href="{{ url_for('index') }}"><img decoding="async" class="img-fluid" src="static/picture/logo_wap.png"></a>
+			</div>
+	    </div>
+	</div>
+	
+	    
+		<!--<div class="row">-->
+		<!--	<div class="col-md-12">-->
+		<!--		<a href="/"><img decoding="async" class="img-fluid" src="/assets/hh/images/logo.jpg"></a>-->
+		<!--	</div>-->
+			 <!--<div class="col-md-4 align-self-center"> -->
+				<!-- <p class="logo-right">传承黄河文化   弘扬中华文明</p> -->
+			 <!--</div> -->
+		<!--</div>-->
+
+
+	
+	
+	<!--tabs-->
+	<div class="container">
+		<div class="row my-5">
+			<div class="col-md-9">
+					<!--ad1-->
+					<div class="ad1">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+											</div>
+															<div class="nei_class my-4">
+						黄河人物					</div>
+										<div class="nei_class_son mb-4 row no-gutters">
+												<div><a href="" class="">黄河宣言</a></div>
+												<div><a href="" class="">黄河文化论坛</a></div>
+												<div><a href="" class="">黄河文化论丛</a></div>
+												<div><a href="" class="">黄河文化学研究</a></div>
+												<div><a href="" class="">黄河国家文化公园</a></div>
+												<div><a href="" class="">黄河文化数字化</a></div>
+												<div><a href="" class="">黄河文艺</a></div>
+												<div><a href="" class="">黄河书画</a></div>
+												<div><a href="" class="nei_active">黄河人物</a></div>
+												<div><a href="" class="">黄河诗词</a></div>
+												<div><a href="" class="">黄河非遗</a></div>
+												<div><a href="" class="">黄河文化交流</a></div>
+											</div>
+				
+					
+					<section class="n_news n_news01">
+                        <div class="ar_title">
+                            <h3>黄河情 | 张志功——在习仲勋身边工作的二十年</h3>
+                            
+                            <div style=" text-align:center;">
+                                <h6>
+                                    <span>发表时间：2023-06-06<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>来源：<i></i></span>
+                                </h6>
+                                <h6>
+                                    <span>作者：<i></i></span>
+                                </h6>
+                                <div class="shart_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-24" id="j_shart_s_24" data-tag="share_1" data-bd-bind="1532840219141">
+                                    <strong>分享到：</strong>
+                                         <a class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+                                         <a class="bds_qzone" data-cmd="qzone" title="QQ空间"></a> 
+                                          <a class="bds_sqq" data-cmd="sqq" title="QQ好友"></a> 
+                                          <a class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+                                          <a class="bds_weixin" data-cmd="weixin" title="微信"></a> 
+                                      </div>
+                                </div>
+                            </div>
+                            <script>
+                window._bd_share_config = {
+    
+                  share : [{
+                    "bdSize" : 24
+                  }],
+    
+    
+                }
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+               </script>
+                        </div>
+                        
+                        <div class="ar_article" style="margin:2.5rem 0">
+                           <p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;"><img src="static/picture/66842f7bfe0c64f937cd132519f1e639.jpg" width="500" height="414" alt=""><br></span></p><p style="text-align:center;"><span style="font-family:&quot;Microsoft YaHei&quot;;font-size:16px;">一九五八年四月，习仲勋同志陪同周恩来总理去三门峡水库视察途中在飞机上研究工作。后站立者为习仲勋秘书张志功。</span></p><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;“风雨二十年，思未断，梦萦魂牵。父兄情，三生有幸，恩重如山。呕心教诲犹如昨，耳提面命声未远。已十载，独立望西天，难入眠。开国泰，辅民安。遭诬陷，志弥坚。行人间正道，义胆侠肝。北战南征两锦绣，天降大任铁肩担。看今朝，江山竞彩霞，喜开颜！”</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;2013年，时年85岁的耄耋老人张志功以一首饱含深情的词作《满江红﻿• 思念》作为总结，完成了他的回忆录《难忘的二十年——在习仲勋身边工作的日子里》。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;张志功，生于1927年11月，河南省三门峡市陕县人，中共党员。1939年至1944年，张志功就读于河南省陕县豫陕中学，1945年考入国立西北农学院（即现今西北农林科技大学），四年后完成学业，参加革命工作。1950年3月，张志功在西安由“新民主主义青年团西北工作委员会”调到中共中央西北局任习仲勋同志秘书，直到1964年5月。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;1962年9月，党的八届十中全会上，习仲勋同志遭康生之流诬陷蒙冤，被无辜戴上了“反党分子”的帽子。身为习仲勋同志的秘书，张志功同时被关押起来，要求揭发“习仲勋反党言论”。那个动乱的年代里，为了自保，儿子揭发父亲，夫妻之间划清界限，兄弟之间反目成仇，同志之间相互倾轧的事情层出不穷，司空见惯。张志功心里只有一个信念：不能昧着良心去说瞎话，更不能为了解脱自己‘反戈一击’。他牢记习仲勋同志多年来对他的教诲“坚持原则、实事求是”，认定为人处世无论什么时候都要讲实话，讲品德，讲良心，更要讲党性，在习仲勋同志顺境时是这样，在他蒙冤受屈的时候，更应该这样。正是凭着对习仲勋同志多年的感情及坚定的信念，张志功被关押期间，没有为了自己过关而歪曲事实、无中生有，并且在被审讯时，极其客观地为习仲勋同志做了非常公正的申辩，也因此被“专案审查委员会”认定为习仲勋同志的“亲信”和“黑爪牙”，内定不能予以重用。被关押两年后，1964年开始，组织上不再让张志功继续担任习仲勋同志的秘书，5月张志功被下放至山东，与习仲勋同志从此分隔两地，没有再见面的机会。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;文化大革命后，1978年4月，习仲勋同志复出任广东省委第二书记，同年6月，张志功再次被调至习仲勋同志身边担任秘书。张志功与习仲勋同志重新在一起后，直到习仲勋同志去世，他们都彼此心照不宣地未向对方提及那段被关押、受审查的辛酸往事以及遭遇的人生磨难。张志功谨记习仲勋同志常说的话：向前看！</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;1984年5月，张志功调任中共中央统战部任办公厅副主任、正局级巡视员。1992年5月，离休。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;两度秘书生涯，张志功在习仲勋同志身边整整工作了20年，在与习仲勋同志朝夕相处、同甘共苦的日子里，近距离接触这位在我国革命、建设和改革进程中发挥了重要作用的伟人，耳濡目染和深深感受到他坚定的理想信念、对党和人民的无限忠诚，坚持实事求是、为党和人民事业的呕心沥血，坚持群众路线、心中始终装着人民群众的优良作风，保持政治本色、从不计个人得失的崇高风范，同时也被他浓浓的人情味所感动。张志功说：当年我能调到习书记身边工作，有一定的偶然性，但这却带给我一生非同寻常的经历。我得以近距离地直接感受一个共和国开国元勋的高尚情操和伟大人格，并和他风雨同舟，患难与共，我深感荣幸和自豪。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;跟随习仲勋同志多年的张志功，回忆起他的老领导时，总会想到他经常说的话：领导干部和群众是平等的，没有高低贵贱之分，要永远生活在人民群众之中，不然的话，就会脱离群众，跟群众对立，同人民群众就想不到一块，就不会关心群众的疾苦。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;关心群众，心里想着群众，是习仲勋同志一贯的作风。1954年底，陕西一封群众来信向国务院反映统购统销的问题。信中说，统购统销以后给群众的食油供应比旧社会还紧张，群众编了个顺口溜：“食油四两，想起老蒋”。来信还说，农民赶着木轱辘大车干活，木轱辘没有油润滑发出了‘吱吱’的叫声，农民就骂道：“我都没油吃，你还叫唤啥哩”！说完向车轱辘撒了泡尿，用这种方式发泄对食油供应政策的不满。时任国务院秘书长的习仲勋同志认为，来信反映的问题事关群众切身利益，要秘书向周总理、毛主席写报告。秘书觉得来信举例有点情绪化，又太过粗俗，就没写进去。习仲勋看后说，一定要写这些事例，说法虽然欠妥，但的确是民情民声，而且事例真实生动，有说服力。报告送周总理、毛主席阅处后，有关方面很快采取措施解决了食油供应紧张问题。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;1960年7月，革命老区陕西省耀县黑田峪大队派人带着7000元钱，到河南洛阳买胶轮马车。途径渑池县时，被怀疑“投机倒把”，人被扣留，款被没收。原来困难时期河南省有文件规定，胶轮马车属于“三类物资”的东西，不许出境。后经一再解释才把人放了，而买车钱却拒不退还。当时的7000元钱，对一个陕北山区的生产队来说，是一笔巨款，这样被没收，怎样向社员交代？无奈之下，大队支书亲自跑到北京找习仲勋同志诉苦求情。身为国务院副总理的习仲勋同志听后，当即给河南省委做工作，追回了买车钱。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;1978年，习仲勋同志主政广东，在下乡调研时，看到群众生活贫困，生产水平低下，内心十分沉重焦虑。他日夜同干部群众谈话，商讨脱贫致富的办法。在习仲勋同志的带领下，在党的十一届三中全会召开之前，广东省就开始摸索开放搞活的办法。习仲勋同志集思广益，提出要利用邻近港澳的优势，发展多种经营，大搞补偿贸易，外来加工，兴办出口加工区，并在宝安、东莞、顺德等珠江三角洲地区引进大量“三来一补”企业。1979年1月23日，广东省委经请示中央，决定将宝安县改为深圳市，将珠海县改为珠海市。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;在中央工作会议期间，习仲勋同志还向邓小平同志汇报，提出广东开放搞活的一系列设想，请求小平同志支持在深圳、珠海、汕头兴办出口贸易加工区。小平同志一锤定音，把“贸易加工区”改名为“经济特区”。1980年8月26日，全国人大以立法的形式，批准深圳、珠海、汕头等地设立经济特区。从此，广东的改革开放和经济发展步入一条迅猛前行的通道，这也成就了后来深圳的崛起与繁荣。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;在张志功眼里，正因为习仲勋同志和他领导下的革命武装力量和人民群众站在一起，陕甘边革命根据地才得以建立及发展；正因为习仲勋同志心系群众，亲自开展实地调查，才避免了1961年河南长葛饿死更多的人；也是为了给群众留下宝贵的历史文化遗产，在习仲勋同志的努力下，西安城墙得以保存；更因为习仲勋同志一心想让群众过上更好的日子，他才会向中央积极争取政策支持，带领广东省委“一班人”，创办经济特区，为中国的现代化建设“杀开了一条血路”。凡此种种，不胜枚举。正如毛泽东主席所说，习仲勋同志是“从群众中走出来的群众领袖”。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;2001年，张志功参加习仲勋同志88岁寿辰，向他说起当时经中央批准正在编的三本书即《习仲勋传》《习仲勋文选》和《习仲勋革命生涯》，张志功参与了《习仲勋革命生涯》一书的编写。习仲勋同志说：“编《文选》，选择一些我的讲话及有关文件，作为历史资料让大家知道一下，是可以的。写《革命生涯》，找我的老战友、老同志谈谈，沙里淘金写些革命小故事也好。至于写我的传记，我不太感兴趣，无非是歌功颂德、评功摆好，写出来能有多少人看啊？前人功过，后人自有评说……”张志功认为，正是习仲勋同志把个人荣辱看得很淡，把党的事业和群众利益看得很重，人民群众才把他记得很牢，他才真正活在人民群众的心中。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;为纪念习仲勋同志逝世十周年并迎接习仲勋同志2013年百岁华诞，已进入耄耋之年的张志功满怀深情的完成了《难忘的二十年——在习仲勋身边工作的日子里》一书，他以忠诚为笔，以人物为经，以时代为纬，用真挚的情感、朴素的语言、细节的刻画，真实地记录了习仲勋同志的历史事迹和人民情怀，立体再现了伟大的共产主义战士、杰出的无产阶级革命家、共和国开国元勋习仲勋同志坎坷、辉煌的人生经历。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;从《难忘的二十年——在习仲勋身边工作的日子里》所记录的点滴中，得以看到习仲勋同志遭受不公、蒙冤受辱、身陷囹圄的磨难和伤痛，以及身处逆境，仍然不忘保护同志和朋友的高尚品格；看到他在处理“李一哲案”过程中展现出的真诚、耐心、细致与锲而不舍；看到他为昭雪“彭案”愤出重拳、洗冤“冯、古”的良苦用心；看到他呕心沥血、大胆开拓、担当起改革开放“开路先锋”重任的气魄与智慧；看到他与患难与共的革命战友之间的深厚友情；看到他无论职务多大、地位多高，善爱人民的初心，始终坚如磐石……</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;《难忘的二十年——在习仲勋身边工作的日子里》看似追忆过去，它更是在见证当下，启迪未来，以激励后人珍惜老一辈革命家留下的宝贵的精神财富，不忘初心，牢记使命。《难忘的二十年——在习仲勋身边工作的日子里》的编写，也充分体现了张志功实事求是，对革命历史人物和事件认真负责的至诚态度和正义精神以及他可贵的道德理性和可敬的至善良知。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;">&emsp;&emsp;张志功2023年6月5日上午在北京病逝，享年96岁。</span><br><span style="font-size:16px;font-family:&quot;Microsoft YaHei&quot;;line-height:2;"></span>                        </div>
+
+                        <section id="ar_fot">
+							                        </section>
+                    </section>
+					
+			</div>
+			<div class="col-md-3 d-none d-sm-block">
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">民俗节庆<small class="right_more"><a href="{{ url_for('minsujieqing') }}">更多+</a></small></div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								23 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h112') }}">“安塞县举行第二届“十大孝子”颁奖典礼</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								25 <small>/ 05月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h211') }}">【黄河民俗】元宵节</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								27 <small>/ 01月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h210') }}">五谷丰登幸福年——山东黄河流域的过年习俗</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li">
+						<div class="row no-gutters">
+							<div class="col-3 right-li-date">
+								14 <small>/ 04月</small>
+							</div>
+							<div class="col-9 right-li-title mt-3 pl-3">
+								<a href="{{ url_for('h208') }}">“风起黄河 筝约潼关”首届风筝大赛 试飞成功</a>
+							</div>
+						</div>
+					</div>
+									</div>
+				<div class="ad2 my-5">
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+									
+					<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/2ab103c88ef714c38feeab62c0276a66.jpg"></a>
+					
+					
+					
+								</div>
+				
+				<div class="tab-right-title">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">图片视频<small class="right_more"><a href="{{ url_for('huanghemeitu') }}">更多+</a></small></div>
+					<div class="tab-right-sp-li">
+						<div class="row no-gutters">
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h204') }}"><img decoding="async" class="img-fluid" src="static/picture/ea49d7f02260484b3208d45d5ca7133e.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h204') }}">冬日黄河 壮丽奇美</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h206') }}"><img decoding="async" class="img-fluid" src="static/picture/6644ef7ab6ccfd3c3c1844a605c051a9.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h206') }}">黄河壶口现“彩虹飞瀑”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h201') }}"><img decoding="async" class="img-fluid" src="static/picture/27260468770b0b25296211cd689c82be.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h201') }}">黄河壶口瀑布现“半清半浊”景观</a></div>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-12 mt-3">
+								<div class="right-sp-li">
+									<a href="{{ url_for('h200') }}"><img decoding="async" class="img-fluid" src="static/picture/55dbc4d514b1cf1a29c8717f7c9bda39.jpg"></a>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h200') }}">黄河入海流——黄河流域生态保护</a></div>
+								</div>
+							</div>
+														<div class="col-md-12 mt-3">
+								<div class="right-video">
+									<div class="play-thumbimg">
+										<a href="{{ url_for('h257') }}" class="thumbimg"><img decoding="async" class="img-fluid" src="static/picture/4c53b1fad30767411a4a0bf383b6654e.jpg"></a>
+										<a href="{{ url_for('h257') }}" class="playWrapper">
+										  <span class="playBtn"><img src="static/picture/play.png" alt=""></span>
+									    </a>
+									</div>
+									<div class="right-sp-title text-truncate text-center"><a href="{{ url_for('h257') }}">陕西黄河文化经济发展研究会黄河文化网工作汇报会</a></div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</div>
+				
+				<div class="tab-right-title mt-3">
+					<div class="tab-right-hr"></div>
+					<div class="tab-right-class">健康文化<small class="right_more"><a href="{{ url_for('jiankangwenhua') }}">更多+</a></small></div>
+					
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h193') }}"><img decoding="async" class="img-fluid" src="static/picture/bded0cad97dd130d324f5bd3f6400572.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h193') }}">杂粮作为传统食物，被细粮所代替后又如何重新回归人们视线的</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h192') }}"><img decoding="async" class="img-fluid" src="static/picture/ebd1953090d47afbdcdcbf0026fa3311.jpg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h192') }}">吃一份食物，换一份“生命值”！不同食物“生命值”不同！</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h190') }}"><img decoding="async" class="img-fluid" src="static/picture/2a61d90a344bf6755c5001603f03f29d.gif"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h190') }}">秋季运动小贴士秋季运动益处多多</a>
+							</div>
+						</div>
+					</div>
+										<div class="tab-right-li my-4">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<a href="{{ url_for('h194') }}"><img decoding="async" class="img-fluid" src="static/picture/539cb8b00779c9da48582dd6e1f0d6c2.jpeg"></a>
+							</div>
+							<div class="col-8 right-jk-title ls3 pl-3">
+								<a href="{{ url_for('h194') }}">建设健康中国缘何成为“生活方式的革命”？丨中国这十年·焦点面对面 </a>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--ad2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 my-4">
+													<a href="javascript:;"><img decoding="async" class="img-fluid" src="static/picture/3e83b5db09a145d0588e8f8342113f0d.jpg"></a>
+									</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--friedlink-->
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-12 link_title my-4 py-2">
+				相关链接
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省政府网站</option>
+				  					<option value="http://www.chinahuanghe.org/">中国黄河文化经济发展研究会</option>
+				  					<option value="http://www.qinghai.gov.cn/">青海省人民政府</option>
+				  					<option value="https://www.sc.gov.cn/">四川省人民政府</option>
+				  					<option value="http://www.gansu.gov.cn/">甘肃省人民政府</option>
+				  					<option value="https://www.nx.gov.cn/">宁夏回族自治区人民政府</option>
+				  					<option value="https://www.nmg.gov.cn/">内蒙古自治区人民政府</option>
+				  					<option value="http://www.shanxi.gov.cn/">山西省人民政府</option>
+				  					<option value="http://www.shaanxi.gov.cn/">陕西省人民政府</option>
+				  					<option value="https://www.henan.gov.cn/">河南省人民政府</option>
+				  					<option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">沿线9省市级政府网站</option>
+				  					<option value="http://www.guoluo.gov.cn/">果洛藏族自治州人民政府</option>
+				  					<option value="http://www.huangnan.gov.cn/">黄南藏族自治州人民政府</option>
+				  					<option value="https://www.hainanzhou.gov.cn/">海南藏族自治州人民政府</option>
+				  					<option value="http://www.haidong.gov.cn/">海东市人民政府</option>
+				  					<option value="http://www.gannan.gov.cn/">甘南藏族自治州人民政府</option>
+				  					<option value="https://www.linxia.gov.cn/">临夏回族自治州人民政府</option>
+				  					<option value="http://www.lanzhou.gov.cn/">兰州市人民政府</option>
+				  					<option value="http://www.baiyin.gov.cn/">白银市人民政府</option>
+				  					<option value="http://www.nxzw.gov.cn/">中卫市人民政府</option>
+				  					<option value="http://www.wuzhong.gov.cn/">吴忠市人民政府</option>
+				  					<option value="http://www.nxlw.gov.cn/">灵武市人民政府</option>
+				  					<option value="http://www.yinchuan.gov.cn/">银川市人民政府</option>
+				  					<option value="http://www.shizuishan.gov.cn/">石嘴山市人民政府</option>
+				  					<option value="http://www.huhhot.gov.cn/">呼和浩特市人民政府</option>
+				  					<option value="http://www.baotou.gov.cn/">包头市人民政府</option>
+				  					<option value="http://www.ordos.gov.cn/">鄂尔多斯市人民政府</option>
+				  					<option value="https://www.bynr.gov.cn/">巴彦淖尔市人民政府</option>
+				  					<option value="http://www.wuhai.gov.cn/">乌海市人民政府</option>
+				  					<option value="https://www.sxxz.gov.cn/">忻州市人民政府</option>
+				  					<option value="http://www.linfen.gov.cn/">临汾市人民政府</option>
+				  					<option value="http://www.lvliang.gov.cn/">吕梁市人民政府</option>
+				  					<option value="http://www.yuncheng.gov.cn/">运城市人民政府</option>
+				  					<option value="http://www.yanan.gov.cn/">延安市人民政府</option>
+				  					<option value="http://www.yl.gov.cn/">榆林市人民政府</option>
+				  					<option value="http://www.weinan.gov.cn/">渭南市人民政府</option>
+				  					<option value="http://www.smx.gov.cn/">三门峡市人民政府</option>
+				  					<option value="http://www.jiaozuo.gov.cn/">焦作市人民政府</option>
+				  					<option value="http://www.ly.gov.cn/">洛阳市人民政府</option>
+				  					<option value="http://www.zhengzhou.gov.cn/">郑州市人民政府</option>
+				  					<option value="http://www.xinxiang.gov.cn/">新乡市人民政府</option>
+				  					<option value="http://www.kaifeng.gov.cn/">开封市人民政府</option>
+				  					<option value="http://www.puyang.gov.cn/">濮阳市人民政府</option>
+				  					<option value="http://www.heze.gov.cn/">菏泽市人民政府</option>
+				  					<option value="http://www.jining.gov.cn/">济宁市人民政府</option>
+				  					<option value="http://www.taian.gov.cn/">泰安市人民政府</option>
+				  					<option value="http://www.liaocheng.gov.cn/">聊城市人民政府</option>
+				  					<option value="http://www.jinan.gov.cn/">济南市人民政府</option>
+				  					<option value="http://www.dezhou.gov.cn/">德州市人民政府</option>
+				  					<option value="http://www.binzhou.gov.cn/">滨州市人民政府</option>
+				  					<option value="https://www.zibo.gov.cn/">淄博市人民政府</option>
+				  					<option value="http://dongying.gov.cn/">东营市人民政府</option>
+				  				  </select>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<div class="form-group select_friend">
+				  <select class="form-control" id="sel1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.size=0" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0">
+					<option value="javascript:;">陕西治黄县级政府网站</option>
+				  					<option value="http://www.fg.gov.cn/">府谷县</option>
+				  					<option value="http://www.sxsm.gov.cn/">神木市</option>
+				  					<option value="http://www.sxjiaxian.gov.cn/">佳县</option>
+				  					<option value="http://www.wubu.gov.cn/">吴堡县</option>
+				  					<option value="http://www.sxsd.gov.cn/">绥德县</option>
+				  					<option value="http://www.qjzhf.gov.cn/">清涧县</option>
+				  					<option value="http://www.yanchuan.gov.cn/">延川县</option>
+				  					<option value="http://www.yanchangxian.gov.cn/">延长县</option>
+				  					<option value="http://www.ycx.gov.cn/">宜川县</option>
+				  					<option value="http://www.hancheng.gov.cn/">韩城市</option>
+				  					<option value="http://www.heyang.gov.cn/">合阳县</option>
+				  					<option value="http://www.dalisn.gov.cn/">大荔县</option>
+				  					<option value="http://www.huayin.gov.cn/">华阴市</option>
+				  					<option value="http://www.tongguan.gov.cn/">潼关县</option>
+				  				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer-->
+	<div class="container-fiuld footer_bg py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 footer_nav text-center my-3">
+					<span><a href="{{ url_for('guanyubenwang') }}">关于本网</a></span>
+					<span><a href="{{ url_for('lianxiwomen') }}">联系我们</a></span>
+					<span><a href="{{ url_for('guanggaofuwu') }}">广告服务</a></span>
+				</div>
+				<div class="col-md-12 mb-3 text-center">
+					©2006-2023黄河文化网－<img src="static/picture/bqlogo.png" style="width:45px">陕西省黄河文化经济发展研究会版权所有 　办公电话：15991806268　投稿邮箱：1581441306@qq.com 　地址：陕西省西安市新城区新城大院省科协楼4层25室				</div>
+				<div class="col-md-12 text-center">
+				<a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2022008303号-2 </a> 　
+				<img src="static/picture/ga.png" style="width:25px"><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61010202000372" style="color:#343a40" target="_blank">陕公网安备 61010202000372号</a>
+				
+				
+				</div>
+                                                         
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+	<script src="static/js/popper.min.js"></script>	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="static/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $('.tabbox .content li:eq(0)').show();
+    	$(".tabbox .tab a").mouseover(function(){
+    		$(this).addClass('on').siblings().removeClass('on');
+    		var index = $(this).index();
+    		number = index;
+    		$('.tabbox .content li').hide();
+    		$('.tabbox .content li:eq('+index+')').show();
+    	});
+    	
+    	var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+    	if(auto ==1){
+    		var number = 0;
+    		var maxNumber = $('.tabbox .tab a').length;
+    		function autotab(){
+    			number++;
+    			number == maxNumber? number = 0 : number;
+    			$('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+    			$('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+    		}
+    		var tabChange = setInterval(autotab,3000);
+    		//鼠标悬停暂停切换
+    		$('.tabbox').mouseover(function(){
+    			clearInterval(tabChange);
+    		});
+    		$('.tabbox').mouseout(function(){
+    			tabChange = setInterval(autotab,3000);
+    		});
+    	  }
+    });
+    </script>
+
+  </body>
+</html>
